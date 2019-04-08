@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="DemoViper" customModuleProvider="target">
+            <connections>
+                <outlet property="emailTextField" destination="tcM-TL-vm8" id="ec0-Z9-zhS"/>
+                <outlet property="loginButton" destination="zTM-F5-lVn" id="1hj-Kk-iCF"/>
+                <outlet property="passwordTextField" destination="ulZ-yU-Gzw" id="1kb-xU-b5N"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbU-fX-1Vj">
+                    <rect key="frame" x="143" y="93" width="89" height="36"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                    <color key="textColor" red="0.4549019608" green="0.4549019608" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tcM-TL-vm8">
+                    <rect key="frame" x="20" y="179" width="335" height="40"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ulZ-yU-Gzw">
+                    <rect key="frame" x="20" y="259" width="335" height="40"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zTM-F5-lVn">
+                    <rect key="frame" x="50" y="349" width="275" height="40"/>
+                    <color key="backgroundColor" red="0.015686274510000001" green="0.2666666667" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="0PN-5a-Vh9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Login">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="loginButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="nSu-SH-lWf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zTM-F5-lVn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1ur-BK-RGp"/>
+                <constraint firstItem="zbU-fX-1Vj" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="1/3" id="26o-NA-Q0g"/>
+                <constraint firstItem="zbU-fX-1Vj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5WP-4E-ebe"/>
+                <constraint firstItem="tcM-TL-vm8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7H4-ra-2VZ"/>
+                <constraint firstItem="tcM-TL-vm8" firstAttribute="height" secondItem="zTM-F5-lVn" secondAttribute="height" id="CLl-zp-uw8"/>
+                <constraint firstItem="ulZ-yU-Gzw" firstAttribute="height" secondItem="zTM-F5-lVn" secondAttribute="height" id="CMo-hF-POu"/>
+                <constraint firstItem="zTM-F5-lVn" firstAttribute="top" secondItem="ulZ-yU-Gzw" secondAttribute="bottom" constant="50" id="HAF-be-p9j"/>
+                <constraint firstItem="ulZ-yU-Gzw" firstAttribute="top" secondItem="tcM-TL-vm8" secondAttribute="bottom" constant="40" id="RKx-Fm-OI0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zTM-F5-lVn" secondAttribute="trailing" constant="50" id="ZEy-p4-xsn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tcM-TL-vm8" secondAttribute="trailing" constant="20" id="bKr-d1-Op5"/>
+                <constraint firstItem="tcM-TL-vm8" firstAttribute="top" secondItem="zbU-fX-1Vj" secondAttribute="bottom" constant="50" id="kPr-eI-mId"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ulZ-yU-Gzw" secondAttribute="trailing" constant="20" id="kpG-1v-pIP"/>
+                <constraint firstItem="ulZ-yU-Gzw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="nBa-c1-17v"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
