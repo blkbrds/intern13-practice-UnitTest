@@ -26,11 +26,13 @@ final class DefaultHomePresenter: HomeEventHandler {
         self.fruitInteractor?.output = self
     }
     
-    private func updateView(fruits: [Fruit]) {
+    // Public to unit test
+    func updateView(fruits: [Fruit]) {
         view?.updateView(with: fruits)
     }
     
-    private func showError(error: Error) {
+    // Public to unit test
+    func showError(error: Error) {
         router?.showError(error: error)
     }
     

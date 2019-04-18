@@ -7,11 +7,12 @@ target 'ViperSample' do
 
   # Pods for ViperSample
   # Test
+  pod 'Nimble'
+  pod 'Quick'
+  pod 'OHHTTPStubs/Swift'
+  
   target 'ViperSampleTests' do
     inherit! :search_paths
-    pod 'Nimble'
-    pod 'Quick'
-    pod 'OHHTTPStubs/Swift'
 end
 
 end
