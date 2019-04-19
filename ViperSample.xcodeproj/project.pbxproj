@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		30F7FEC22268230200374DC4 /* ViperSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F7FEC12268230200374DC4 /* ViperSampleTests.swift */; };
+		283666CA2269B2C90010BAC4 /* FailureFruitServicesStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283666C62269B2C90010BAC4 /* FailureFruitServicesStub.swift */; };
+		283666CB2269B2C90010BAC4 /* MockListFruitInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283666C72269B2C90010BAC4 /* MockListFruitInteractorOutput.swift */; };
+		283666CC2269B2C90010BAC4 /* ListFruitInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283666C82269B2C90010BAC4 /* ListFruitInteractorTests.swift */; };
+		283666CD2269B2C90010BAC4 /* SuccessFruitServicesStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283666C92269B2C90010BAC4 /* SuccessFruitServicesStub.swift */; };
+		74A9705B1777963503E9834D /* Pods_ViperSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EDEADA33221E411F3250E6B /* Pods_ViperSampleTests.framework */; };
 		74E22BA7225453FB00D7FEBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E22BA6225453FB00D7FEBB /* AppDelegate.swift */; };
 		74E22BAE225453FC00D7FEBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74E22BAD225453FC00D7FEBB /* Assets.xcassets */; };
 		74E22BB1225453FC00D7FEBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74E22BAF225453FC00D7FEBB /* LaunchScreen.storyboard */; };
@@ -50,8 +54,11 @@
 		037F69340C7DBB0F335C3C43 /* Pods-ViperSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperSampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperSampleTests/Pods-ViperSampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		0C0BB3C94CB015D9CDC1E2C8 /* Pods-ViperSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperSample/Pods-ViperSample.release.xcconfig"; sourceTree = "<group>"; };
 		1AD9F92AA437F62B91B0D68E /* Pods-ViperSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperSampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViperSampleTests/Pods-ViperSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		283666C62269B2C90010BAC4 /* FailureFruitServicesStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FailureFruitServicesStub.swift; sourceTree = "<group>"; };
+		283666C72269B2C90010BAC4 /* MockListFruitInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockListFruitInteractorOutput.swift; sourceTree = "<group>"; };
+		283666C82269B2C90010BAC4 /* ListFruitInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListFruitInteractorTests.swift; sourceTree = "<group>"; };
+		283666C92269B2C90010BAC4 /* SuccessFruitServicesStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccessFruitServicesStub.swift; sourceTree = "<group>"; };
 		30F7FEBF2268230200374DC4 /* ViperSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		30F7FEC12268230200374DC4 /* ViperSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperSampleTests.swift; sourceTree = "<group>"; };
 		30F7FEC32268230200374DC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74E22BA3225453FB00D7FEBB /* ViperSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E22BA6225453FB00D7FEBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74A9705B1777963503E9834D /* Pods_ViperSampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,11 +123,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		283666C52269B23F0010BAC4 /* InteractorTests */ = {
+			isa = PBXGroup;
+			children = (
+				283666C62269B2C90010BAC4 /* FailureFruitServicesStub.swift */,
+				283666C82269B2C90010BAC4 /* ListFruitInteractorTests.swift */,
+				283666C72269B2C90010BAC4 /* MockListFruitInteractorOutput.swift */,
+				283666C92269B2C90010BAC4 /* SuccessFruitServicesStub.swift */,
+			);
+			path = InteractorTests;
+			sourceTree = "<group>";
+		};
 		30F7FEC02268230200374DC4 /* ViperSampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				30F7FEC12268230200374DC4 /* ViperSampleTests.swift */,
 				30F7FEC32268230200374DC4 /* Info.plist */,
+				283666C52269B23F0010BAC4 /* InteractorTests */,
 			);
 			path = ViperSampleTests;
 			sourceTree = "<group>";
@@ -127,11 +146,11 @@
 		74E22B9A225453FA00D7FEBB = {
 			isa = PBXGroup;
 			children = (
-				30F7FEC02268230200374DC4 /* ViperSampleTests */,
 				F463F1447D126632A4C575B1 /* Frameworks */,
 				23E7074C5FA4D0352E8C0498 /* Pods */,
 				74E22BA4225453FB00D7FEBB /* Products */,
 				74E22BA5225453FB00D7FEBB /* ViperSample */,
+				30F7FEC02268230200374DC4 /* ViperSampleTests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -361,9 +380,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30F7FEC62268230200374DC4 /* Build configuration list for PBXNativeTarget "ViperSampleTests" */;
 			buildPhases = (
+				C9F1962B59803BA90D5494A5 /* [CP] Check Pods Manifest.lock */,
 				30F7FEBB2268230200374DC4 /* Sources */,
 				30F7FEBC2268230200374DC4 /* Frameworks */,
 				30F7FEBD2268230200374DC4 /* Resources */,
+				0BBB5D0F6F238C8B9F85A69B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -405,6 +426,7 @@
 				TargetAttributes = {
 					30F7FEBE2268230200374DC4 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1010;
 						TestTargetID = 74E22BA2225453FB00D7FEBB;
 					};
 					74E22BA2225453FB00D7FEBB = {
@@ -454,6 +476,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0BBB5D0F6F238C8B9F85A69B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ViperSampleTests/Pods-ViperSampleTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ViperSampleTests/Pods-ViperSampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A0D05A92F6535B6FDE853895 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -476,6 +524,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C9F1962B59803BA90D5494A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ViperSampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -483,7 +553,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30F7FEC22268230200374DC4 /* ViperSampleTests.swift in Sources */,
+				283666CB2269B2C90010BAC4 /* MockListFruitInteractorOutput.swift in Sources */,
+				283666CC2269B2C90010BAC4 /* ListFruitInteractorTests.swift in Sources */,
+				283666CD2269B2C90010BAC4 /* SuccessFruitServicesStub.swift in Sources */,
+				283666CA2269B2C90010BAC4 /* FailureFruitServicesStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,8 +611,10 @@
 /* Begin XCBuildConfiguration section */
 		30F7FEC72268230200374DC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AD9F92AA437F62B91B0D68E /* Pods-ViperSampleTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ViperSampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -550,6 +625,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "tan.huynh-asiantech.vn.ViperSampleTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViperSample.app/ViperSample";
@@ -558,8 +634,10 @@
 		};
 		30F7FEC82268230200374DC4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 037F69340C7DBB0F335C3C43 /* Pods-ViperSampleTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ViperSampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;

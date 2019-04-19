@@ -16,4 +16,8 @@ struct Errors {
     static let loginFail = NSError(domain: "",
                                    code: 1,
                                    userInfo: [NSLocalizedDescriptionKey: "Login Fail"])
+    
+    static let invalidValue = NSError(domain: "",
+                                      code: 2,
+                                      userInfo: [NSLocalizedDescriptionKey: "value is invalid"])
 }
