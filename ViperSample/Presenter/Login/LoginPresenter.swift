@@ -25,11 +25,11 @@ final class DefaultLoginPresenter: LoginEventHandler {
         self.loginInteractor?.output = self
     }
     
-    private func showHomeScreen() {
+    func showHomeScreen() {
         router?.showHomeScreen()
     }
     
-    private func showError(error: Error) {
+    func showError(error: Error) {
         router?.showError(error: error)
     }
     
