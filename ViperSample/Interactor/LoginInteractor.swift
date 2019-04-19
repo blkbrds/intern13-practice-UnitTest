@@ -18,7 +18,7 @@ protocol LoginInteractorOutput {
 }
 
 final class DefaultLoginInteractor: LoginInteractor {
-    private let userServices: UserServices?
+    let userServices: UserServices?
     var output: LoginInteractorOutput?
     
     init(userServices: UserServices? = DefaultUserServices()) {
@@ -37,6 +37,4 @@ final class DefaultLoginInteractor: LoginInteractor {
             }
         })
     }
-    
-    
 }

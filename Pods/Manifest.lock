@@ -13,7 +13,7 @@ PODS:
   - OHHTTPStubs/OHPathHelpers (7.0.0)
   - OHHTTPStubs/Swift (7.0.0):
     - OHHTTPStubs/Default
-  - Quick (2.0.0)
+  - Quick (2.1.0)
 
 DEPENDENCIES:
   - Nimble
@@ -29,8 +29,8 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Nimble: 45f786ae66faa9a709624227fae502db55a8bdd0
   OHHTTPStubs: ef33a2c353110d306bb98f695435ec56ff5a26c3
-  Quick: ce1276c7c27ba2da3cb2fd0cde053c3648b3b22d
+  Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
 
-PODFILE CHECKSUM: 61d7e34b30e72a997f083e92f9c19a758f60f1f0
+PODFILE CHECKSUM: 4546f3bc2e2c5e095d22815eb7fce43343c81596
 
 COCOAPODS: 1.6.1
