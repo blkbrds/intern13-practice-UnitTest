@@ -11,7 +11,7 @@ import Quick
 
 @testable import ViperSample
 
-class HomePresenterTests: QuickSpec {
+final class HomePresenterTests: QuickSpec {
 
     override func spec() {
 
@@ -36,14 +36,14 @@ class HomePresenterTests: QuickSpec {
                 expect(mockHomeVC.fruits.count) == 2
             }
 
-            it("Elemet of 'fruits' array should be instance of 'Fruit'") {
+            it("Element of 'fruits' array should be instance of 'Fruit'") {
                 expect(mockHomeVC.fruits.first).to(beAnInstanceOf(Fruit.self))
+                expect(mockHomeVC.fruits.last).to(beAnInstanceOf(Fruit.self))
             }
 
             it("Test first element of 'fruits' array") {
-                guard let fruit = mockHomeVC.fruits.first else { return }
-                expect(fruit.name) == "apple"
-                expect(fruit.price) == 125
+                expect(mockHomeVC.fruits.first?.name) == "apple"
+                expect(mockHomeVC.fruits.first?.price) == 125
             }
         }
 
@@ -53,9 +53,8 @@ class HomePresenterTests: QuickSpec {
             }
 
             it("Error should be pass to class implement") {
-                guard let error = mockDefautHR.error as NSError? else { return }
-                expect(error.code) == 444
-                expect(error.domain) == "https://ExampleError"
+                expect(mockDefautHR.error?._code) == 444
+                expect(mockDefautHR.error?._domain) == "https://ExampleError"
             }
         }
 
@@ -64,29 +63,21 @@ class HomePresenterTests: QuickSpec {
                 homePresenter.viewDidLoad()
             }
 
-            it("Signal shoud be pass to class implement, 'flag' shoud be true") {
-                expect(mockListFIO.flag) == true
-            }
-        }
-
-        describe("Test function 'didFetchFruit()'") {
-            it("When success") {
-                mockListFIO.passSuccess()
-
-                expect(mockHomeVC.fruits.count) == 2
-                expect(mockHomeVC.fruits.first).to(beAnInstanceOf(Fruit.self))
-
-                guard let fruit = mockHomeVC.fruits.first else { return }
-                expect(fruit.name) == "PipeApple"
-                expect(fruit.price) == 100
+            it("Number of element 'fruits' array should be 5") {
+                expect(mockHomeVC.fruits.count) == 5
             }
             
-            it("When failure") {
-                mockListFIO.passFailure()
-                
-                guard let error = mockDefautHR.error as NSError? else { return }
-                expect(error.code) == 400
-                expect(error.domain) == "https://ExampleError111"
+            it("Element of 'fruits' array should be instance of 'Fruit'") {
+                expect(mockHomeVC.fruits[0]).to(beAnInstanceOf(Fruit.self))
+                expect(mockHomeVC.fruits[1]).to(beAnInstanceOf(Fruit.self))
+                expect(mockHomeVC.fruits[2]).to(beAnInstanceOf(Fruit.self))
+                expect(mockHomeVC.fruits[3]).to(beAnInstanceOf(Fruit.self))
+                expect(mockHomeVC.fruits[4]).to(beAnInstanceOf(Fruit.self))
+            }
+            
+            it("Test first element of 'fruits' array") {
+                expect(mockHomeVC.fruits.first?.name) == "Banana"
+                expect(mockHomeVC.fruits.first?.price) == 1.5
             }
         }
 

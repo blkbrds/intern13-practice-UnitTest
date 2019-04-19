@@ -12,30 +12,26 @@ import Foundation
 final class MockDefaultListFruitInteractor: ListFruitInteractor {
     
     var output: ListFruitInteractorOutput?
-    var flag = false
+    private let fruitServices: FruitServices?
+    
+    init(fruitServices: FruitServices? = DefaultFruitServices()) {
+        self.fruitServices = fruitServices
+    }
     
     func getFruits() {
-        flag = true
-    }
-    
-    func passSuccess() {
-        output?.didFetchFruit(result: .success(Dummy.fruits))
-    }
-    
-    func passFailure() {
-        output?.didFetchFruit(result: .failure(Dummy.error))
-    }
-}
-
-extension MockDefaultListFruitInteractor {
-    
-    struct Dummy {
-        static let fruits: [Fruit] = {
-            let pipeApple = Fruit(entity: FruitEntity(name: "PipeApple", price: 100))
-            let lemon = Fruit(entity: FruitEntity(name: "Lemon", price: 110))
-            return [pipeApple, lemon]
-        }()
-        
-        static let error = NSError(domain: "https://ExampleError111", code: 400, userInfo: nil)
+        fruitServices?.getFruits(completion: { [weak self] result in
+            guard let self = self else { return }
+            switch result {
+            case .success(let entities):
+                var fruits: [Fruit] = []
+                for entity in entities {
+                    let fruit = Fruit(entity: entity)
+                    fruits.append(fruit)
+                }
+                self.output?.didFetchFruit(result: .success(fruits))
+            case .failure(let error):
+                self.output?.didFetchFruit(result: .failure(error))
+            }
+        })
     }
 }
