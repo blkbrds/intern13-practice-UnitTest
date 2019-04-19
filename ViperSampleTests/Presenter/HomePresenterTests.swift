@@ -63,21 +63,8 @@ final class HomePresenterTests: QuickSpec {
                 homePresenter.viewDidLoad()
             }
 
-            it("Number of element 'fruits' array should be 5") {
-                expect(mockHomeVC.fruits.count) == 5
-            }
-            
-            it("Element of 'fruits' array should be instance of 'Fruit'") {
-                expect(mockHomeVC.fruits[0]).to(beAnInstanceOf(Fruit.self))
-                expect(mockHomeVC.fruits[1]).to(beAnInstanceOf(Fruit.self))
-                expect(mockHomeVC.fruits[2]).to(beAnInstanceOf(Fruit.self))
-                expect(mockHomeVC.fruits[3]).to(beAnInstanceOf(Fruit.self))
-                expect(mockHomeVC.fruits[4]).to(beAnInstanceOf(Fruit.self))
-            }
-            
-            it("Test first element of 'fruits' array") {
-                expect(mockHomeVC.fruits.first?.name) == "Banana"
-                expect(mockHomeVC.fruits.first?.price) == 1.5
+            it("Signal shoud be pass to class implement, 'flag' shoud be true") {
+                expect(mockListFIO.flag) == true
             }
         }
 

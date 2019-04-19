@@ -12,26 +12,9 @@ import Foundation
 final class MockDefaultListFruitInteractor: ListFruitInteractor {
     
     var output: ListFruitInteractorOutput?
-    private let fruitServices: FruitServices?
-    
-    init(fruitServices: FruitServices? = DefaultFruitServices()) {
-        self.fruitServices = fruitServices
-    }
+    var flag = false
     
     func getFruits() {
-        fruitServices?.getFruits(completion: { [weak self] result in
-            guard let self = self else { return }
-            switch result {
-            case .success(let entities):
-                var fruits: [Fruit] = []
-                for entity in entities {
-                    let fruit = Fruit(entity: entity)
-                    fruits.append(fruit)
-                }
-                self.output?.didFetchFruit(result: .success(fruits))
-            case .failure(let error):
-                self.output?.didFetchFruit(result: .failure(error))
-            }
-        })
+        flag = true
     }
 }
