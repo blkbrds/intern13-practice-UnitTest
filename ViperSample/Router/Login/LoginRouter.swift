@@ -29,7 +29,6 @@ final class DefaultLoginRouter: LoginRouter {
         let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
         alertVC.addAction(okAction)
         viewController?.present(alertVC, animated: true, completion: nil)
-
     }
     
     private func homeViewController() -> HomeViewController {

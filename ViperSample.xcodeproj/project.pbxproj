@@ -37,6 +37,8 @@
 		FFEE7913226971A600806CFC /* LoginPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEE7912226971A600806CFC /* LoginPresenterTests.swift */; };
 		FFEE7916226976F500806CFC /* MockDefaultLoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEE7915226976F500806CFC /* MockDefaultLoginRouter.swift */; };
 		FFEE79182269796300806CFC /* MockDefaultLoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEE79172269796300806CFC /* MockDefaultLoginInteractor.swift */; };
+		FFEE79202269ABDC00806CFC /* UserServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEE791F2269ABDC00806CFC /* UserServicesTests.swift */; };
+		FFEE79222269ADBF00806CFC /* MockDefaultUserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEE79212269ADBF00806CFC /* MockDefaultUserServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,8 @@
 		FFEE7912226971A600806CFC /* LoginPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTests.swift; sourceTree = "<group>"; };
 		FFEE7915226976F500806CFC /* MockDefaultLoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDefaultLoginRouter.swift; sourceTree = "<group>"; };
 		FFEE79172269796300806CFC /* MockDefaultLoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDefaultLoginInteractor.swift; sourceTree = "<group>"; };
+		FFEE791F2269ABDC00806CFC /* UserServicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServicesTests.swift; sourceTree = "<group>"; };
+		FFEE79212269ADBF00806CFC /* MockDefaultUserServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDefaultUserServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,7 @@
 		30F7FEC02268230200374DC4 /* ViperSampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				FFEE791E2269ABB900806CFC /* Services */,
 				FFEE79112269717400806CFC /* Presenter */,
 				30F7FEC32268230200374DC4 /* Info.plist */,
 			);
@@ -378,6 +383,15 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		FFEE791E2269ABB900806CFC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FFEE791F2269ABDC00806CFC /* UserServicesTests.swift */,
+				FFEE79212269ADBF00806CFC /* MockDefaultUserServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -558,9 +572,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFEE79202269ABDC00806CFC /* UserServicesTests.swift in Sources */,
 				FFEE7916226976F500806CFC /* MockDefaultLoginRouter.swift in Sources */,
 				FFEE7913226971A600806CFC /* LoginPresenterTests.swift in Sources */,
 				FFEE79182269796300806CFC /* MockDefaultLoginInteractor.swift in Sources */,
+				FFEE79222269ADBF00806CFC /* MockDefaultUserServices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
