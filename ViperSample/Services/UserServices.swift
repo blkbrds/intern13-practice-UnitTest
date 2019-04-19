@@ -24,7 +24,7 @@ final class DefaultUserServices: UserServices {
             return
         }
     
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+        DispatchQueue.main.asyncAfter(deadline: .now()) {
             let entity = UserEntity(email: "abc@gmail.com", name: "Anna")
             completion(.success(entity))
         }
