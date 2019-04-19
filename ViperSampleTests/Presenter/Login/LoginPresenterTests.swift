@@ -49,7 +49,6 @@ final class LoginPresenterTests: QuickSpec {
                 }
             }
         }
-
     }
 }
 
