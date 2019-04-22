@@ -31,10 +31,8 @@ final class LoginInteractorTests: QuickSpec {
 
                 it("Test should be return name and email") {
                     loginInteractor.login(email: "abc@gmail.com", password: "123456")
-                    DispatchQueue.main.asyncAfter(deadline: .now()) {
-                        expect(mockLoginPresenter.name) == "Anna"
-                        expect(mockLoginPresenter.email) == "abc@gmail.com"
-                    }
+                    expect(mockLoginPresenter.name) == "Anna"
+                    expect(mockLoginPresenter.email) == "abc@gmail.com"
                 }
 
                 it("Test should be return invalid email") {

@@ -23,10 +23,8 @@ final class DefaultUserServices: UserServices {
             completion(.failure(Errors.loginFail))
             return
         }
-    
-        DispatchQueue.main.asyncAfter(deadline: .now()) {
-            let entity = UserEntity(email: "abc@gmail.com", name: "Anna")
-            completion(.success(entity))
-        }
+
+        let entity = UserEntity(email: "abc@gmail.com", name: "Anna")
+        completion(.success(entity))
     }
 }
