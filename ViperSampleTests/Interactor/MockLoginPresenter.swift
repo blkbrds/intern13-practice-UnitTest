@@ -12,18 +12,9 @@ import Foundation
 
 final class MockLoginPresenter: LoginInteractorOutput {
 
-    var name = ""
-    var email = ""
-    var error: Error?
-    var errorLocalizedDescription = ""
+    var result: Result<User> = .success(User())
 
     func didLogin(result: Result<User>) {
-        switch result {
-        case .success(let user):
-            name = user.name
-            email = user.email
-        case .failure(let error):
-            self.errorLocalizedDescription = error.localizedDescription
-        }
+        self.result = result
     }
 }
