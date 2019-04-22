@@ -11,7 +11,7 @@ import Foundation
 struct Fruit {
     let name: String
     let price: Double
-    
+
     init(entity: FruitEntity) {
         name = entity.name
         price = entity.price
