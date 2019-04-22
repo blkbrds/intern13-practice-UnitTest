@@ -11,6 +11,11 @@
 		283666CB2269B2C90010BAC4 /* MockListFruitInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283666C72269B2C90010BAC4 /* MockListFruitInteractorOutput.swift */; };
 		283666CC2269B2C90010BAC4 /* ListFruitInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283666C82269B2C90010BAC4 /* ListFruitInteractorTests.swift */; };
 		283666CD2269B2C90010BAC4 /* SuccessFruitServicesStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283666C92269B2C90010BAC4 /* SuccessFruitServicesStub.swift */; };
+		283666D02269B64A0010BAC4 /* LoginInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283666CF2269B64A0010BAC4 /* LoginInteractorTests.swift */; };
+		283666D22269B90E0010BAC4 /* SuccessUserServicesStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283666D12269B90E0010BAC4 /* SuccessUserServicesStub.swift */; };
+		283666D42269B9D20010BAC4 /* MockLoginInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283666D32269B9D20010BAC4 /* MockLoginInteractorOutput.swift */; };
+		283666D62269C17A0010BAC4 /* FailureUserServicesStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283666D52269C17A0010BAC4 /* FailureUserServicesStub.swift */; };
+		28768DAC226D99C600280326 /* InvalidUserServicesStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28768DAB226D99C600280326 /* InvalidUserServicesStub.swift */; };
 		74A9705B1777963503E9834D /* Pods_ViperSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EDEADA33221E411F3250E6B /* Pods_ViperSampleTests.framework */; };
 		74E22BA7225453FB00D7FEBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E22BA6225453FB00D7FEBB /* AppDelegate.swift */; };
 		74E22BAE225453FC00D7FEBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74E22BAD225453FC00D7FEBB /* Assets.xcassets */; };
@@ -58,6 +63,11 @@
 		283666C72269B2C90010BAC4 /* MockListFruitInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockListFruitInteractorOutput.swift; sourceTree = "<group>"; };
 		283666C82269B2C90010BAC4 /* ListFruitInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListFruitInteractorTests.swift; sourceTree = "<group>"; };
 		283666C92269B2C90010BAC4 /* SuccessFruitServicesStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccessFruitServicesStub.swift; sourceTree = "<group>"; };
+		283666CF2269B64A0010BAC4 /* LoginInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorTests.swift; sourceTree = "<group>"; };
+		283666D12269B90E0010BAC4 /* SuccessUserServicesStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessUserServicesStub.swift; sourceTree = "<group>"; };
+		283666D32269B9D20010BAC4 /* MockLoginInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginInteractorOutput.swift; sourceTree = "<group>"; };
+		283666D52269C17A0010BAC4 /* FailureUserServicesStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailureUserServicesStub.swift; sourceTree = "<group>"; };
+		28768DAB226D99C600280326 /* InvalidUserServicesStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvalidUserServicesStub.swift; sourceTree = "<group>"; };
 		30F7FEBF2268230200374DC4 /* ViperSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30F7FEC32268230200374DC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74E22BA3225453FB00D7FEBB /* ViperSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,12 +136,25 @@
 		283666C52269B23F0010BAC4 /* InteractorTests */ = {
 			isa = PBXGroup;
 			children = (
+				283666CE2269B6230010BAC4 /* LoginInteractorTests */,
 				283666C62269B2C90010BAC4 /* FailureFruitServicesStub.swift */,
 				283666C82269B2C90010BAC4 /* ListFruitInteractorTests.swift */,
 				283666C72269B2C90010BAC4 /* MockListFruitInteractorOutput.swift */,
 				283666C92269B2C90010BAC4 /* SuccessFruitServicesStub.swift */,
 			);
 			path = InteractorTests;
+			sourceTree = "<group>";
+		};
+		283666CE2269B6230010BAC4 /* LoginInteractorTests */ = {
+			isa = PBXGroup;
+			children = (
+				283666D52269C17A0010BAC4 /* FailureUserServicesStub.swift */,
+				28768DAB226D99C600280326 /* InvalidUserServicesStub.swift */,
+				283666CF2269B64A0010BAC4 /* LoginInteractorTests.swift */,
+				283666D32269B9D20010BAC4 /* MockLoginInteractorOutput.swift */,
+				283666D12269B90E0010BAC4 /* SuccessUserServicesStub.swift */,
+			);
+			path = LoginInteractorTests;
 			sourceTree = "<group>";
 		};
 		30F7FEC02268230200374DC4 /* ViperSampleTests */ = {
@@ -553,9 +576,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28768DAC226D99C600280326 /* InvalidUserServicesStub.swift in Sources */,
 				283666CB2269B2C90010BAC4 /* MockListFruitInteractorOutput.swift in Sources */,
+				283666D62269C17A0010BAC4 /* FailureUserServicesStub.swift in Sources */,
 				283666CC2269B2C90010BAC4 /* ListFruitInteractorTests.swift in Sources */,
+				283666D22269B90E0010BAC4 /* SuccessUserServicesStub.swift in Sources */,
+				283666D42269B9D20010BAC4 /* MockLoginInteractorOutput.swift in Sources */,
 				283666CD2269B2C90010BAC4 /* SuccessFruitServicesStub.swift in Sources */,
+				283666D02269B64A0010BAC4 /* LoginInteractorTests.swift in Sources */,
 				283666CA2269B2C90010BAC4 /* FailureFruitServicesStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
