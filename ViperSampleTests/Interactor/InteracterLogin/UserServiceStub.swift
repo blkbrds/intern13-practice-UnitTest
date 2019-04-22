@@ -11,7 +11,19 @@ import Foundation
 
 final class SuccessUserServiceStub: UserServices {
     func login(email: String, password: String, completion: @escaping (Result<UserEntity>) -> ()) {
-        completion(.success([]))
+        completion(.success(UserEntity(email: "abc@gmail.com", name: "abc")))
+    }
+}
+
+final class InvalidEmailUserServiceStub: UserServices {
+    func login(email: String, password: String, completion: @escaping (Result<UserEntity>) -> ()) {
+        completion(.failure(Errors.invalidEmail))
+    }
+}
+
+final class LoginFailUserServiceStub: UserServices {
+    func login(email: String, password: String, completion: @escaping (Result<UserEntity>) -> ()) {
+        completion(.failure(Errors.loginFail))
     }
 }
 

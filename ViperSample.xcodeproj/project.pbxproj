@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2BCEE03022697564004D4136 /* LoginInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCEE02F22697564004D4136 /* LoginInteractorTests.swift */; };
-		2BCEE03C2269A83E004D4136 /* MockLoginInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCEE03B2269A83E004D4136 /* MockLoginInteractorTests.swift */; };
 		2BCEE0402269B065004D4136 /* MockLoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCEE03F2269B065004D4136 /* MockLoginPresenter.swift */; };
 		2BCEE0422269D9E9004D4136 /* UserServiceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCEE0412269D9E9004D4136 /* UserServiceStub.swift */; };
 		74E22BA7225453FB00D7FEBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E22BA6225453FB00D7FEBB /* AppDelegate.swift */; };
@@ -55,7 +54,6 @@
 		0C0BB3C94CB015D9CDC1E2C8 /* Pods-ViperSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperSample/Pods-ViperSample.release.xcconfig"; sourceTree = "<group>"; };
 		1AD9F92AA437F62B91B0D68E /* Pods-ViperSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperSampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViperSampleTests/Pods-ViperSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2BCEE02F22697564004D4136 /* LoginInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorTests.swift; sourceTree = "<group>"; };
-		2BCEE03B2269A83E004D4136 /* MockLoginInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginInteractorTests.swift; sourceTree = "<group>"; };
 		2BCEE03F2269B065004D4136 /* MockLoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginPresenter.swift; sourceTree = "<group>"; };
 		2BCEE0412269D9E9004D4136 /* UserServiceStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServiceStub.swift; sourceTree = "<group>"; };
 		30F7FEBF2268230200374DC4 /* ViperSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,7 +124,6 @@
 		2BCEE02E2269753C004D4136 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				2BCEE03A2269A80E004D4136 /* ListFruitInteracter */,
 				2BCEE0392269A7F5004D4136 /* InteracterLogin */,
 			);
 			path = Interactor;
@@ -140,14 +137,6 @@
 				2BCEE0412269D9E9004D4136 /* UserServiceStub.swift */,
 			);
 			path = InteracterLogin;
-			sourceTree = "<group>";
-		};
-		2BCEE03A2269A80E004D4136 /* ListFruitInteracter */ = {
-			isa = PBXGroup;
-			children = (
-				2BCEE03B2269A83E004D4136 /* MockLoginInteractorTests.swift */,
-			);
-			path = ListFruitInteracter;
 			sourceTree = "<group>";
 		};
 		30F7FEC02268230200374DC4 /* ViperSampleTests */ = {
@@ -568,7 +557,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BCEE03C2269A83E004D4136 /* MockLoginInteractorTests.swift in Sources */,
 				2BCEE0402269B065004D4136 /* MockLoginPresenter.swift in Sources */,
 				2BCEE0422269D9E9004D4136 /* UserServiceStub.swift in Sources */,
 				2BCEE03022697564004D4136 /* LoginInteractorTests.swift in Sources */,

@@ -8,7 +8,6 @@
 
 import Nimble
 import Quick
-import OHHTTPStubs
 @testable import ViperSample
 
 final class LoginInteractorTests: QuickSpec {
@@ -17,14 +16,13 @@ final class LoginInteractorTests: QuickSpec {
 
         var loginInteractor: DefaultLoginInteractor?
         var loginPresenter: MockLoginPresenter?
-        var userServiceStub: UserServiceStub?
 
         describe("Login interactor test") {
 
-            context("Test login func", {
+            context("Response should be return success", {
 
                 beforeEach {
-                    userServiceStub = UserServiceStub()
+                    let userServiceStub = SuccessUserServiceStub()
                     loginInteractor = DefaultLoginInteractor(userServices: userServiceStub)
                     loginPresenter = MockLoginPresenter()
                     loginInteractor?.output = loginPresenter
@@ -33,16 +31,47 @@ final class LoginInteractorTests: QuickSpec {
                 it("Response should be return success", closure: {
                     loginInteractor?.login(email: "abc@gmail.com", password: "123456")
                     expect(loginPresenter?.user?.email) == "abc@gmail.com"
-                    expect(loginPresenter?.user?.name) == "Anna"
+                    expect(loginPresenter?.user?.name) == "abc"
                 })
 
-                it("Response should be return failure  nvalid email", closure: {
-                    loginInteractor?.login(email: "xxx", password: "123456")
+                afterEach {
+                    loginInteractor = nil
+                    loginPresenter = nil
+                }
+            })
+
+            context("Response should be return failure with error: Invalid email!", {
+
+                beforeEach {
+                    let userServiceStub = InvalidEmailUserServiceStub()
+                    loginInteractor = DefaultLoginInteractor(userServices: userServiceStub)
+                    loginPresenter = MockLoginPresenter()
+                    loginInteractor?.output = loginPresenter
+                }
+
+                it("Error should be invalid email", closure: {
+                    loginInteractor?.login(email: "abc@gmail.com", password: "123456")
                     expect(loginPresenter?.err?.localizedDescription) == "Invalid email!"
                 })
 
-                it("Response should be return failure login Fail", closure: {
-                    loginInteractor?.login(email: "abc@gmail.com", password: "xxx")
+                afterEach {
+                    loginInteractor = nil
+                    loginPresenter = nil
+                }
+            })
+
+
+            context("Response should be return failure with error: Login Fail", {
+
+                beforeEach {
+                    let userServiceStub = LoginFailUserServiceStub()
+                    loginInteractor = DefaultLoginInteractor(userServices: userServiceStub)
+                    loginPresenter = MockLoginPresenter()
+                    loginInteractor?.output = loginPresenter
+                }
+
+                it("Error should be login fail", closure: {
+                    loginInteractor?.login(email: "abc@gmail.com", password: "123456")
                     expect(loginPresenter?.err?.localizedDescription) == "Login Fail"
                 })
 
