@@ -26,8 +26,8 @@ final class DefaultLoginInteractor: LoginInteractor {
     }
     
     func login(email: String, password: String) {
-        userServices?.login(email: email, password: password, completion: { [weak self](result) in
-            guard let self = self  else { return }
+        userServices?.login(email: email, password: password, completion: { [weak self] (result) in
+            guard let self = self else { return }
             switch result {
             case .success(let entity):
                 let user = User(entity: entity)
@@ -37,6 +37,4 @@ final class DefaultLoginInteractor: LoginInteractor {
             }
         })
     }
-    
-    
 }
