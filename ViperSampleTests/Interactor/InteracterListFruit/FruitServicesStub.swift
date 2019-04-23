@@ -9,19 +9,9 @@
 import Foundation
 @testable import ViperSample
 
-enum Errorr: Error {
-    case error
-}
-
 final class SuccessFruitServicesStub: FruitServices {
-    func getFruits(completion: @escaping (Result<Array<FruitEntity>>) -> ()) {
+    func getFruits(completion: @escaping Completion<[FruitEntity]>) {
         completion(.success([FruitEntity(name: "test", price: 123)]))
-    }
-}
-
-final class FailureFruitServicesStub: FruitServices {
-    func getFruits(completion: @escaping (Result<Array<FruitEntity>>) -> ()) {
-        completion(.failure(Errorr.error))
     }
 }
 

@@ -41,27 +41,6 @@ final class ListFruitInteractorTests: QuickSpec {
                     homePresenter = nil
                 }
             })
-
-            context("getFruits should be return failure", {
-
-                beforeEach {
-                    let fruitServiceStub = FailureFruitServicesStub()
-                    listFruitInteractor = DefaultListFruitInteractor(fruitServices: fruitServiceStub)
-                    homePresenter = MockHomePresenter()
-                    listFruitInteractor?.output = homePresenter
-                }
-
-                it("getFruits should be return failure", closure: {
-                    listFruitInteractor?.getFruits()
-                    expect(homePresenter?.fruit.isEmpty) == true
-                    expect(homePresenter?.error).notTo(beNil())
-                })
-
-                afterEach {
-                    listFruitInteractor = nil
-                    homePresenter = nil
-                }
-            })
         }
     }
 }
