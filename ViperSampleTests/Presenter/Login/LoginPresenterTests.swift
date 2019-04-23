@@ -45,8 +45,8 @@ final class LoginPresenterTests: QuickSpec {
             }
             
             it("Error should be pass to class implement") {
-                expect(mockDefaltLR.error?._code) == 111
-                expect(mockDefaltLR.error?._domain) == "https://ExampleError1234"
+                expect((mockDefaltLR.error as NSError?)?.code) == 111
+                expect((mockDefaltLR.error as NSError?)?.domain) == "https://ExampleError1234"
             }
         }
         
