@@ -10,6 +10,8 @@
 		30A27A83226989E000C058BA /* ListFruitInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A27A82226989E000C058BA /* ListFruitInteractorTests.swift */; };
 		30A27A852269A84500C058BA /* FruitServicesStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A27A842269A84500C058BA /* FruitServicesStub.swift */; };
 		30A27A872269AB0400C058BA /* MockHomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A27A862269AB0400C058BA /* MockHomePresenter.swift */; };
+		30EE245A226F0BB2003BF1BB /* LoginInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EE2458226F0BB2003BF1BB /* LoginInteractorTests.swift */; };
+		30EE245B226F0BB2003BF1BB /* MockLoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EE2459226F0BB2003BF1BB /* MockLoginPresenter.swift */; };
 		30F7FECD22682F7000374DC4 /* HomePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F7FECC22682F7000374DC4 /* HomePresenterTests.swift */; };
 		30F7FECF2268581300374DC4 /* MockHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F7FECE2268581300374DC4 /* MockHomeViewController.swift */; };
 		30F7FED12268656B00374DC4 /* MockDefaultHomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F7FED02268656B00374DC4 /* MockDefaultHomeRouter.swift */; };
@@ -60,6 +62,8 @@
 		30A27A82226989E000C058BA /* ListFruitInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFruitInteractorTests.swift; sourceTree = "<group>"; };
 		30A27A842269A84500C058BA /* FruitServicesStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitServicesStub.swift; sourceTree = "<group>"; };
 		30A27A862269AB0400C058BA /* MockHomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomePresenter.swift; sourceTree = "<group>"; };
+		30EE2458226F0BB2003BF1BB /* LoginInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractorTests.swift; sourceTree = "<group>"; };
+		30EE2459226F0BB2003BF1BB /* MockLoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockLoginPresenter.swift; sourceTree = "<group>"; };
 		30F7FEBF2268230200374DC4 /* ViperSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30F7FEC32268230200374DC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30F7FECC22682F7000374DC4 /* HomePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterTests.swift; sourceTree = "<group>"; };
@@ -151,6 +155,8 @@
 		30A27A892269B43900C058BA /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				30EE2458226F0BB2003BF1BB /* LoginInteractorTests.swift */,
+				30EE2459226F0BB2003BF1BB /* MockLoginPresenter.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -590,7 +596,9 @@
 				30F7FECF2268581300374DC4 /* MockHomeViewController.swift in Sources */,
 				30F7FECD22682F7000374DC4 /* HomePresenterTests.swift in Sources */,
 				30F7FED32268658800374DC4 /* MockDefaultListFruitInteractor.swift in Sources */,
+				30EE245A226F0BB2003BF1BB /* LoginInteractorTests.swift in Sources */,
 				30F7FED12268656B00374DC4 /* MockDefaultHomeRouter.swift in Sources */,
+				30EE245B226F0BB2003BF1BB /* MockLoginPresenter.swift in Sources */,
 				30A27A852269A84500C058BA /* FruitServicesStub.swift in Sources */,
 				30A27A83226989E000C058BA /* ListFruitInteractorTests.swift in Sources */,
 			);
