@@ -34,6 +34,7 @@
 		74E22BF72254564400D7FEBB /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E22BF52254564400D7FEBB /* UserServices.swift */; };
 		74E22BF82254564400D7FEBB /* FruitServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E22BF62254564400D7FEBB /* FruitServices.swift */; };
 		947731A91E49146117A5FB25 /* Pods_ViperSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A398DBD5108F4E92D2626DC3 /* Pods_ViperSample.framework */; };
+		FF9309E5226EC1DD005FA27D /* FruitServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9309E4226EC1DD005FA27D /* FruitServicesTests.swift */; };
 		FFE95BAE226D733000B388BA /* UserServicesStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE95BAD226D733000B388BA /* UserServicesStub.swift */; };
 		FFE95BB2226D7ADC00B388BA /* HomePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE95BB1226D7ADC00B388BA /* HomePresenterTests.swift */; };
 		FFE95BB4226D7B7D00B388BA /* MockDefaultHomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE95BB3226D7B7D00B388BA /* MockDefaultHomeRouter.swift */; };
@@ -97,6 +98,7 @@
 		7EDEADA33221E411F3250E6B /* Pods_ViperSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViperSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95AFF2BF530D75F6B034DB8F /* Pods-ViperSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViperSample/Pods-ViperSample.debug.xcconfig"; sourceTree = "<group>"; };
 		A398DBD5108F4E92D2626DC3 /* Pods_ViperSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViperSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF9309E4226EC1DD005FA27D /* FruitServicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitServicesTests.swift; sourceTree = "<group>"; };
 		FFE95BAD226D733000B388BA /* UserServicesStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServicesStub.swift; sourceTree = "<group>"; };
 		FFE95BB1226D7ADC00B388BA /* HomePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterTests.swift; sourceTree = "<group>"; };
 		FFE95BB3226D7B7D00B388BA /* MockDefaultHomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDefaultHomeRouter.swift; sourceTree = "<group>"; };
@@ -431,6 +433,7 @@
 			children = (
 				FFEE791F2269ABDC00806CFC /* UserServicesTests.swift */,
 				FFEE79212269ADBF00806CFC /* MockDefaultUserServices.swift */,
+				FF9309E4226EC1DD005FA27D /* FruitServicesTests.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -630,6 +633,7 @@
 				FFE95BC1226DBE2B00B388BA /* ListFruitInteractorTests.swift in Sources */,
 				FFEE79202269ABDC00806CFC /* UserServicesTests.swift in Sources */,
 				FFE95BB6226D7C9E00B388BA /* MockDefaultListFruitInteractor.swift in Sources */,
+				FF9309E5226EC1DD005FA27D /* FruitServicesTests.swift in Sources */,
 				FFE95BB2226D7ADC00B388BA /* HomePresenterTests.swift in Sources */,
 				FFE95BB4226D7B7D00B388BA /* MockDefaultHomeRouter.swift in Sources */,
 				FFE95BAE226D733000B388BA /* UserServicesStub.swift in Sources */,
