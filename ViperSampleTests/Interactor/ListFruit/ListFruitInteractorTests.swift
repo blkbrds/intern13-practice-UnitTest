@@ -16,7 +16,7 @@ final class ListFruitInteractorTests: QuickSpec {
     override func spec() {
         
         var defaultLFI: DefaultListFruitInteractor!
-        var fruitServiceStub: FruitServicesStub!
+        var fruitServiceStub: SuccessFruitServiceStub!
         
         beforeEach {
             defaultLFI = DefaultListFruitInteractor()
@@ -29,7 +29,7 @@ final class ListFruitInteractorTests: QuickSpec {
             context("When completion success") {
                 
                 beforeEach {
-                    fruitServiceStub = FruitServicesStub(completionFlag: true)
+                    fruitServiceStub = SuccessFruitServiceStub()
                     defaultLFI.fruitServices = fruitServiceStub
                     
                     mockHomePresenter = MockHomePresenter()
@@ -38,18 +38,15 @@ final class ListFruitInteractorTests: QuickSpec {
                     defaultLFI.getFruits()
                 }
                 
-                it("Number of element 'fruits' array should be 2") {
-                    expect(mockHomePresenter.fruits.count) == 2
-                }
-                
-                it("Element of 'fruits' array should be instance of 'Fruit'") {
-                    expect(mockHomePresenter.fruits.first).to(beAnInstanceOf(Fruit.self))
-                    expect(mockHomePresenter.fruits.last).to(beAnInstanceOf(Fruit.self))
-                }
-                
-                it("Test first element of 'fruits' array") {
-                    expect(mockHomePresenter.fruits.first?.name) == "WaterMelon"
-                    expect(mockHomePresenter.fruits.first?.price) == 15
+                it("Result should be return success") {
+                    switch mockHomePresenter.result {
+                    case .success(let fruits):
+                        expect(fruits.count) == 2
+                        expect(fruits[0].name) == "WaterMelon"
+                        expect(fruits[0].price) == 15
+                    case .failure:
+                        fail()
+                    }
                 }
                 
                 afterEach {
@@ -57,30 +54,6 @@ final class ListFruitInteractorTests: QuickSpec {
                     fruitServiceStub = nil
                 }
             }
-            
-            context("When completion failure") {
-                
-                beforeEach {
-                    fruitServiceStub = FruitServicesStub(completionFlag: false)
-                    defaultLFI.fruitServices = fruitServiceStub
-                    
-                    mockHomePresenter = MockHomePresenter()
-                    defaultLFI.output = mockHomePresenter
-                    
-                    defaultLFI.getFruits()
-                }
-                
-                it("Error should be pass to class implement") {
-                    expect(mockHomePresenter.error?._code) == 404
-                    expect(mockHomePresenter.error?._domain) == "https://404Error"
-                }
-                
-                afterEach {
-                    mockHomePresenter = nil
-                    fruitServiceStub = nil
-                }
-            }
-            
         }
         
         afterEach {

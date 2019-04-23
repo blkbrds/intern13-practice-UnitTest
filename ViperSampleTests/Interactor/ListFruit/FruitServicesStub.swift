@@ -10,28 +10,17 @@ import Foundation
 
 @testable import ViperSample
 
-final class FruitServicesStub: FruitServices {
+final class SuccessFruitServiceStub: FruitServices {
     
-    var completionFlag: Bool
-    
-    init(completionFlag: Bool) {
-        self.completionFlag = completionFlag
-    }
-
-    func getFruits(completion: @escaping (Result<Array<FruitEntity>>) -> ()) {
-        if completionFlag {
-            completion(.success(Dummy.fruits))
-        } else {
-            completion(.failure(Dummy.error))
-        }
+    func getFruits(completion: @escaping Completion<[FruitEntity]>){
+        completion(.success(Dummy.fruits))
     }
 }
 
-extension FruitServicesStub {
+extension SuccessFruitServiceStub {
     
     struct Dummy {
         static let fruits = [FruitEntity(name: "WaterMelon", price: 15), FruitEntity(name: "StarFruit", price: 300)]
-        
         static let error = NSError(domain: "https://404Error", code: 404, userInfo: nil)
     }
 }

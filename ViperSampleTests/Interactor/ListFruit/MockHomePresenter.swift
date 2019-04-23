@@ -12,15 +12,9 @@ import Foundation
 
 final class MockHomePresenter: ListFruitInteractorOutput {
     
-    var fruits: [Fruit] = []
-    var error: Error?
+    var result: Result<[Fruit]> = .success([])
 
     func didFetchFruit(result: Result<[Fruit]>) {
-        switch result {
-        case .success(let fruits):
-            self.fruits = fruits
-        case .failure(let error):
-            self.error = error
-        }
+        self.result = result
     }
 }
