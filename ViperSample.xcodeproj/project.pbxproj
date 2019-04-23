@@ -17,10 +17,8 @@
 		283666D62269C17A0010BAC4 /* FailureUserServicesStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283666D52269C17A0010BAC4 /* FailureUserServicesStub.swift */; };
 		28768DAC226D99C600280326 /* InvalidUserServicesStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28768DAB226D99C600280326 /* InvalidUserServicesStub.swift */; };
 		28768DB6226DA17A00280326 /* FruitServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28768DB5226DA17A00280326 /* FruitServicesTests.swift */; };
-		28768DB8226DA70A00280326 /* ValidFruitServicesStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28768DB7226DA70A00280326 /* ValidFruitServicesStub.swift */; };
 		28768DBC226DB88400280326 /* ListFruitInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28768DBB226DB88400280326 /* ListFruitInteractor.swift */; };
 		28768DC1226DC50900280326 /* UserServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28768DC0226DC50900280326 /* UserServicesTests.swift */; };
-		28768DC3226DC69F00280326 /* UserServicesStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28768DC2226DC69F00280326 /* UserServicesStub.swift */; };
 		74A9705B1777963503E9834D /* Pods_ViperSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EDEADA33221E411F3250E6B /* Pods_ViperSampleTests.framework */; };
 		74E22BA7225453FB00D7FEBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E22BA6225453FB00D7FEBB /* AppDelegate.swift */; };
 		74E22BAE225453FC00D7FEBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74E22BAD225453FC00D7FEBB /* Assets.xcassets */; };
@@ -73,10 +71,8 @@
 		283666D52269C17A0010BAC4 /* FailureUserServicesStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailureUserServicesStub.swift; sourceTree = "<group>"; };
 		28768DAB226D99C600280326 /* InvalidUserServicesStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvalidUserServicesStub.swift; sourceTree = "<group>"; };
 		28768DB5226DA17A00280326 /* FruitServicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitServicesTests.swift; sourceTree = "<group>"; };
-		28768DB7226DA70A00280326 /* ValidFruitServicesStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidFruitServicesStub.swift; sourceTree = "<group>"; };
 		28768DBB226DB88400280326 /* ListFruitInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListFruitInteractor.swift; path = ../../../.Trash/ListFruitInteractor.swift; sourceTree = "<group>"; };
 		28768DC0226DC50900280326 /* UserServicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServicesTests.swift; sourceTree = "<group>"; };
-		28768DC2226DC69F00280326 /* UserServicesStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServicesStub.swift; sourceTree = "<group>"; };
 		30F7FEBF2268230200374DC4 /* ViperSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30F7FEC32268230200374DC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74E22BA3225453FB00D7FEBB /* ViperSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,7 +175,6 @@
 			isa = PBXGroup;
 			children = (
 				28768DB5226DA17A00280326 /* FruitServicesTests.swift */,
-				28768DB7226DA70A00280326 /* ValidFruitServicesStub.swift */,
 			);
 			path = FruitServices;
 			sourceTree = "<group>";
@@ -188,7 +183,6 @@
 			isa = PBXGroup;
 			children = (
 				28768DC0226DC50900280326 /* UserServicesTests.swift */,
-				28768DC2226DC69F00280326 /* UserServicesStub.swift */,
 			);
 			path = UserServices;
 			sourceTree = "<group>";
@@ -613,7 +607,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28768DC3226DC69F00280326 /* UserServicesStub.swift in Sources */,
 				28768DAC226D99C600280326 /* InvalidUserServicesStub.swift in Sources */,
 				283666CB2269B2C90010BAC4 /* MockListFruitInteractorOutput.swift in Sources */,
 				28768DB6226DA17A00280326 /* FruitServicesTests.swift in Sources */,
@@ -625,7 +618,6 @@
 				28768DC1226DC50900280326 /* UserServicesTests.swift in Sources */,
 				283666D02269B64A0010BAC4 /* LoginInteractorTests.swift in Sources */,
 				283666CA2269B2C90010BAC4 /* FailureFruitServicesStub.swift in Sources */,
-				28768DB8226DA70A00280326 /* ValidFruitServicesStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

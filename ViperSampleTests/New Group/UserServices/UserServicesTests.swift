@@ -17,18 +17,18 @@ final class UserServicesTests: QuickSpec {
 
     override func spec() {
         
-        var userServicesStub: UserServicesStub!
+        var defaultUserServices: DefaultUserServices!
         
         describe("Test protocol 'UserServices'") {
             
             beforeEach {
-                userServicesStub = UserServicesStub()
+                defaultUserServices = DefaultUserServices()
             }
             
-            context("When implement protocol") {
+            context("When implement protocol, func") {
                 
-                it("Should be return result of it's") {
-                    userServicesStub.login(email: "abcgmail.com", password: "123456", completion: { (result) in
+                it("Should be return result login fail") {
+                    defaultUserServices.login(email: "abc@gmail.com", password: "12345678", completion: { (result) in
                         switch result {
                         case .success:
                             fail()
@@ -37,9 +37,32 @@ final class UserServicesTests: QuickSpec {
                         }
                     })
                 }
+                
+                it("Should be return result invalid email") {
+                    defaultUserServices.login(email: "abcgmail.com", password: "12345678", completion: { (result) in
+                        switch result {
+                        case .success:
+                            fail()
+                        case .failure(let error):
+                            expect(error.localizedDescription) == "Invalid email!"
+                        }
+                    })
+                }
+
+                it("Should be return result: email and name") {
+                    defaultUserServices.login(email: "abc@gmail.com", password: "123456", completion: { (result) in
+                        switch result {
+                        case .success(let value):
+                            expect(value.name) == "Anna"
+                            expect(value.email) == "abc@gmail.com"
+                        case .failure:
+                            fail()
+                        }
+                    })
+                }
             }
             afterEach {
-                userServicesStub = nil
+                defaultUserServices = nil
             }
         }
     }

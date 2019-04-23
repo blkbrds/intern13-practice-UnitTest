@@ -17,23 +17,23 @@ final class FruitServicesTests: QuickSpec {
     
     override func spec() {
         
-        var validFruitServicesStub: ValidFruitServicesStub!
+        var defaultFruitServices: DefaultFruitServices!
         
         describe("Test protocol 'FruitServices'") {
             
             beforeEach {
-                validFruitServicesStub = ValidFruitServicesStub()
+                defaultFruitServices = DefaultFruitServices()
             }
             
             context("When implement it's") {
                 
                 it("Should be completion result of protocol") {
-                    validFruitServicesStub.getFruits(completion: { (result) in
+                    defaultFruitServices.getFruits(completion: { (result) in
                         switch result {
                         case .success(let value):
-                            expect(value.count) == 2
-                            expect(value[0].name) == "Boa Hancook"
-                            expect(value[1].price) == 475.2
+                            expect(value.count) == 5
+                            expect(value[0].name) == "Banana"
+                            expect(value[1].price) == 3
                         case .failure:
                             fail()
                         }
