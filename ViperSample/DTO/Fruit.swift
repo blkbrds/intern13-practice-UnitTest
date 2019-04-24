@@ -9,8 +9,11 @@
 import Foundation
 
 struct Fruit {
-    let name: String
-    let price: Double
+    var name = ""
+    var price = 0.0
+    
+    // Init empty for unit test
+    init() {}
     
     init(entity: FruitEntity) {
         name = entity.name
