@@ -53,8 +53,8 @@ final class HomePresenterTests: QuickSpec {
             }
 
             it("Error should be pass to class implement") {
-                expect(mockDefautHR.error?._code) == 444
-                expect(mockDefautHR.error?._domain) == "https://ExampleError"
+                expect((mockDefautHR.error as NSError?)?.code) == 444
+                expect((mockDefautHR.error as NSError?)?.domain) == "https://ExampleError"
             }
         }
 
