@@ -19,7 +19,8 @@ protocol ListFruitInteractorOutput: class {
 
 final class DefaultListFruitInteractor: ListFruitInteractor {
     
-    private let fruitServices: FruitServices?
+    // Public to unit test
+    var fruitServices: FruitServices?
     weak var output: ListFruitInteractorOutput?
     
     init(fruitServices: FruitServices? = DefaultFruitServices()) {

@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		30EE2460226F0F4E003BF1BB /* FruitServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EE245F226F0F4E003BF1BB /* FruitServicesTests.swift */; };
-		30EE2462226F110D003BF1BB /* UserServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EE2461226F110D003BF1BB /* UserServicesTests.swift */; };
+		30760C13227018C300946405 /* FruitServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30760C11227018C300946405 /* FruitServicesTests.swift */; };
+		30760C14227018C300946405 /* UserServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30760C12227018C300946405 /* UserServicesTests.swift */; };
+		30A27A83226989E000C058BA /* ListFruitInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A27A82226989E000C058BA /* ListFruitInteractorTests.swift */; };
+		30A27A852269A84500C058BA /* FruitServicesStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A27A842269A84500C058BA /* FruitServicesStub.swift */; };
+		30A27A872269AB0400C058BA /* MockHomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A27A862269AB0400C058BA /* MockHomePresenter.swift */; };
 		30F7FECD22682F7000374DC4 /* HomePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F7FECC22682F7000374DC4 /* HomePresenterTests.swift */; };
 		30F7FECF2268581300374DC4 /* MockHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F7FECE2268581300374DC4 /* MockHomeViewController.swift */; };
 		30F7FED12268656B00374DC4 /* MockDefaultHomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F7FED02268656B00374DC4 /* MockDefaultHomeRouter.swift */; };
@@ -56,8 +59,11 @@
 		037F69340C7DBB0F335C3C43 /* Pods-ViperSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperSampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperSampleTests/Pods-ViperSampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		0C0BB3C94CB015D9CDC1E2C8 /* Pods-ViperSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperSample/Pods-ViperSample.release.xcconfig"; sourceTree = "<group>"; };
 		1AD9F92AA437F62B91B0D68E /* Pods-ViperSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperSampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViperSampleTests/Pods-ViperSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
-		30EE245F226F0F4E003BF1BB /* FruitServicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitServicesTests.swift; sourceTree = "<group>"; };
-		30EE2461226F110D003BF1BB /* UserServicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServicesTests.swift; sourceTree = "<group>"; };
+		30760C11227018C300946405 /* FruitServicesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitServicesTests.swift; sourceTree = "<group>"; };
+		30760C12227018C300946405 /* UserServicesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserServicesTests.swift; sourceTree = "<group>"; };
+		30A27A82226989E000C058BA /* ListFruitInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFruitInteractorTests.swift; sourceTree = "<group>"; };
+		30A27A842269A84500C058BA /* FruitServicesStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitServicesStub.swift; sourceTree = "<group>"; };
+		30A27A862269AB0400C058BA /* MockHomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomePresenter.swift; sourceTree = "<group>"; };
 		30F7FEBF2268230200374DC4 /* ViperSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30F7FEC32268230200374DC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30F7FECC22682F7000374DC4 /* HomePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterTests.swift; sourceTree = "<group>"; };
@@ -127,20 +133,46 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		30EE245C226F0EF2003BF1BB /* Services */ = {
+		30760C10227018C300946405 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				30EE245F226F0F4E003BF1BB /* FruitServicesTests.swift */,
-				30EE2461226F110D003BF1BB /* UserServicesTests.swift */,
+				30760C11227018C300946405 /* FruitServicesTests.swift */,
+				30760C12227018C300946405 /* UserServicesTests.swift */,
 			);
-			name = Services;
-			path = "Servicé";
+			path = Services;
+			sourceTree = "<group>";
+		};
+		30A27A7F2269892600C058BA /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				30A27A892269B43900C058BA /* Login */,
+				30A27A882269B42E00C058BA /* ListFruit */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		30A27A882269B42E00C058BA /* ListFruit */ = {
+			isa = PBXGroup;
+			children = (
+				30A27A82226989E000C058BA /* ListFruitInteractorTests.swift */,
+				30A27A842269A84500C058BA /* FruitServicesStub.swift */,
+				30A27A862269AB0400C058BA /* MockHomePresenter.swift */,
+			);
+			path = ListFruit;
+			sourceTree = "<group>";
+		};
+		30A27A892269B43900C058BA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		30F7FEC02268230200374DC4 /* ViperSampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				30EE245C226F0EF2003BF1BB /* Services */,
+				30760C10227018C300946405 /* Services */,
+				30A27A7F2269892600C058BA /* Interactor */,
 				30F7FEC9226829A000374DC4 /* Presenter */,
 				30F7FEC32268230200374DC4 /* Info.plist */,
 			);
@@ -568,12 +600,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30A27A872269AB0400C058BA /* MockHomePresenter.swift in Sources */,
 				30F7FECF2268581300374DC4 /* MockHomeViewController.swift in Sources */,
 				30F7FECD22682F7000374DC4 /* HomePresenterTests.swift in Sources */,
-				30EE2462226F110D003BF1BB /* UserServicesTests.swift in Sources */,
-				30EE2460226F0F4E003BF1BB /* FruitServicesTests.swift in Sources */,
 				30F7FED32268658800374DC4 /* MockDefaultListFruitInteractor.swift in Sources */,
+				30760C13227018C300946405 /* FruitServicesTests.swift in Sources */,
+				30760C14227018C300946405 /* UserServicesTests.swift in Sources */,
 				30F7FED12268656B00374DC4 /* MockDefaultHomeRouter.swift in Sources */,
+				30A27A852269A84500C058BA /* FruitServicesStub.swift in Sources */,
+				30A27A83226989E000C058BA /* ListFruitInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
