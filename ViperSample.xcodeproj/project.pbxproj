@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		30A27A762269607000C058BA /* LoginPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A27A752269607000C058BA /* LoginPresenterTests.swift */; };
-		30A27A792269610F00C058BA /* MockLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A27A782269610F00C058BA /* MockLoginViewController.swift */; };
 		30A27A7B2269616F00C058BA /* MockDefaultLoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A27A7A2269616F00C058BA /* MockDefaultLoginRouter.swift */; };
 		30A27A7D226961E000C058BA /* MockDefaultLoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A27A7C226961E000C058BA /* MockDefaultLoginInteractor.swift */; };
 		30A27A83226989E000C058BA /* ListFruitInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A27A82226989E000C058BA /* ListFruitInteractorTests.swift */; };
@@ -62,7 +61,6 @@
 		0C0BB3C94CB015D9CDC1E2C8 /* Pods-ViperSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperSample/Pods-ViperSample.release.xcconfig"; sourceTree = "<group>"; };
 		1AD9F92AA437F62B91B0D68E /* Pods-ViperSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperSampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViperSampleTests/Pods-ViperSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		30A27A752269607000C058BA /* LoginPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTests.swift; sourceTree = "<group>"; };
-		30A27A782269610F00C058BA /* MockLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginViewController.swift; sourceTree = "<group>"; };
 		30A27A7A2269616F00C058BA /* MockDefaultLoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDefaultLoginRouter.swift; sourceTree = "<group>"; };
 		30A27A7C226961E000C058BA /* MockDefaultLoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDefaultLoginInteractor.swift; sourceTree = "<group>"; };
 		30A27A82226989E000C058BA /* ListFruitInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFruitInteractorTests.swift; sourceTree = "<group>"; };
@@ -141,7 +139,6 @@
 			isa = PBXGroup;
 			children = (
 				30A27A752269607000C058BA /* LoginPresenterTests.swift */,
-				30A27A782269610F00C058BA /* MockLoginViewController.swift */,
 				30A27A7A2269616F00C058BA /* MockDefaultLoginRouter.swift */,
 				30A27A7C226961E000C058BA /* MockDefaultLoginInteractor.swift */,
 			);
@@ -618,7 +615,6 @@
 				30A27A7B2269616F00C058BA /* MockDefaultLoginRouter.swift in Sources */,
 				30A27A7D226961E000C058BA /* MockDefaultLoginInteractor.swift in Sources */,
 				30DAF70522701A550062DA0F /* MockHomeViewController.swift in Sources */,
-				30A27A792269610F00C058BA /* MockLoginViewController.swift in Sources */,
 				30A27A762269607000C058BA /* LoginPresenterTests.swift in Sources */,
 				30A27A852269A84500C058BA /* FruitServicesStub.swift in Sources */,
 				30DAF70722701A550062DA0F /* HomePresenterTests.swift in Sources */,

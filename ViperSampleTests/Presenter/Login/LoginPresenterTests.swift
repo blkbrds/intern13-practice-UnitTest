@@ -16,12 +16,12 @@ final class LoginPresenterTests: QuickSpec {
     override func spec() {
         
         var loginPresenter: DefaultLoginPresenter!
-        var mockLoginVC: MockLoginViewController!
+        var mockLoginVC: LoginViewController!
         var mockDefaltLR: MockDefaultLoginRouter!
         var mockDefaultLI: MockDefaultLoginInteractor!
         
         beforeEach {
-            mockLoginVC = MockLoginViewController()
+            mockLoginVC = LoginViewController()
             mockDefaltLR = MockDefaultLoginRouter()
             mockDefaultLI = MockDefaultLoginInteractor()
             loginPresenter = DefaultLoginPresenter(view: mockLoginVC, router: mockDefaltLR, loginInteractor: mockDefaultLI)
