@@ -14,7 +14,7 @@ import Nimble
 final class ListFruitInteractorTests: QuickSpec {
 
     override func spec() {
-        var listFruitInteractor: DefaultListFruitInteractor!
+        var defaultListFruitInteractor: DefaultListFruitInteractor!
         var fruitServices: FruitServices!
         var mockHomePresenter: MockHomePresenter!
 
@@ -25,12 +25,12 @@ final class ListFruitInteractorTests: QuickSpec {
                 beforeEach {
                     fruitServices = SuccessGetFruits()
                     mockHomePresenter = MockHomePresenter()
-                    listFruitInteractor = DefaultListFruitInteractor(fruitServices: fruitServices)
-                    listFruitInteractor.output = mockHomePresenter
+                    defaultListFruitInteractor = DefaultListFruitInteractor(fruitServices: fruitServices)
+                    defaultListFruitInteractor.output = mockHomePresenter
                 }
 
                 it("Test should be return an array of Fruits") {
-                    listFruitInteractor.getFruits()
+                    defaultListFruitInteractor.getFruits()
                     switch mockHomePresenter.result {
                     case .success(let value):
                         expect(value.count) == 5

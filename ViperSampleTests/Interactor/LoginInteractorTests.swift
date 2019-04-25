@@ -14,10 +14,7 @@ import Nimble
 final class LoginInteractorTests: QuickSpec {
 
     override func spec() {
-        var loginInteractor: DefaultLoginInteractor!
-        var successUserServices: SuccessUserServiceStub!
-        var invalidEmailUserServices: InvalidEmailUserServiceStub!
-        var loginFailUserServices: LoginFailUserServiceStub!
+        var defaultLoginInteractor: DefaultLoginInteractor!
         var mockLoginPresenter: MockLoginPresenter!
 
         describe("Test LoginInteractor") {
@@ -25,14 +22,14 @@ final class LoginInteractorTests: QuickSpec {
             context("Test LoginInteractor's functions") {
 
                 beforeEach {
-                    successUserServices = SuccessUserServiceStub()
-                    loginInteractor = DefaultLoginInteractor(userServices: successUserServices)
+                    let userServiceStub = SuccessUserServiceStub()
+                    defaultLoginInteractor = DefaultLoginInteractor(userServices: userServiceStub)
                     mockLoginPresenter = MockLoginPresenter()
-                    loginInteractor.output = mockLoginPresenter
+                    defaultLoginInteractor.output = mockLoginPresenter
                 }
 
                 it("Test should be return name and email") {
-                    loginInteractor.login(email: "abc@gmail.com", password: "123456")
+                    defaultLoginInteractor.login(email: "abc@gmail.com", password: "123456")
                     switch mockLoginPresenter.result {
                     case .success(let value):
                         expect(value.email) == "abc@gmail.com"
@@ -46,14 +43,14 @@ final class LoginInteractorTests: QuickSpec {
             context("Test login fail with valid email") {
 
                 beforeEach {
-                    invalidEmailUserServices = InvalidEmailUserServiceStub()
-                    loginInteractor = DefaultLoginInteractor(userServices: invalidEmailUserServices)
+                    let userServiceStub = InvalidEmailUserServiceStub()
+                    defaultLoginInteractor = DefaultLoginInteractor(userServices: userServiceStub)
                     mockLoginPresenter = MockLoginPresenter()
-                    loginInteractor.output = mockLoginPresenter
+                    defaultLoginInteractor.output = mockLoginPresenter
                 }
 
                 it("Test should be return invalid email") {
-                    loginInteractor.login(email: "abcgmail.com", password: "123456")
+                    defaultLoginInteractor.login(email: "abcgmail.com", password: "123456")
                     switch mockLoginPresenter.result {
                     case .success:
                         fail()
@@ -66,14 +63,14 @@ final class LoginInteractorTests: QuickSpec {
             context("Test login fail with wrong email or password") {
 
                 beforeEach {
-                    loginFailUserServices = LoginFailUserServiceStub()
-                    loginInteractor = DefaultLoginInteractor(userServices: loginFailUserServices)
+                    let userServiceStub = LoginFailUserServiceStub()
+                    defaultLoginInteractor = DefaultLoginInteractor(userServices: userServiceStub)
                     mockLoginPresenter = MockLoginPresenter()
-                    loginInteractor.output = mockLoginPresenter
+                    defaultLoginInteractor.output = mockLoginPresenter
                 }
 
                 it("Test should be return faild login") {
-                    loginInteractor.login(email: "abc@gmail.com", password: "12345666")
+                    defaultLoginInteractor.login(email: "abc@gmail.com", password: "12345666")
                     switch mockLoginPresenter.result {
                     case .success:
                         fail()

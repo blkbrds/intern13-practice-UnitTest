@@ -14,9 +14,9 @@ import Nimble
 final class HomePresenterTests: QuickSpec {
 
     override func spec() {
-        var homePresenter: DefaultHomePresenter!
-        var mockHomeRouter: MockDefaultHomeRouter!
-        var mockHomeInteractor: MockDefaultListFruitInteractor!
+        var defaultHomePresenter: DefaultHomePresenter!
+        var mockDefaultHomeRouter: MockDefaultHomeRouter!
+        var mockDefaultListFruitInteractor: MockDefaultListFruitInteractor!
         var mockHomeViewController: MockHomeViewController!
         var error: Error!
 
@@ -26,27 +26,27 @@ final class HomePresenterTests: QuickSpec {
 
                 beforeEach {
                     mockHomeViewController = MockHomeViewController()
-                    mockHomeRouter = MockDefaultHomeRouter()
-                    mockHomeInteractor = MockDefaultListFruitInteractor()
-                    homePresenter = DefaultHomePresenter(view: mockHomeViewController, router: mockHomeRouter, fruitInteractor: mockHomeInteractor)
+                    mockDefaultHomeRouter = MockDefaultHomeRouter()
+                    mockDefaultListFruitInteractor = MockDefaultListFruitInteractor()
+                    defaultHomePresenter = DefaultHomePresenter(view: mockHomeViewController, router: mockDefaultHomeRouter, fruitInteractor: mockDefaultListFruitInteractor)
                     error = Dummy.error
                 }
 
                 it("Test error should was sent to class implement it") {
-                    homePresenter.showError(error: error)
-                    expect(mockHomeRouter.error?._domain) == "trongque"
+                    defaultHomePresenter.showError(error: error)
+                    expect(mockDefaultHomeRouter.error?._domain) == "trongque"
                 }
 
                 it("Test func updateView() is called") {
-                    homePresenter.updateView(fruits: Dummy.fruits)
+                    defaultHomePresenter.updateView(fruits: Dummy.fruits)
                     expect(mockHomeViewController.fruits.count) == 1
                     expect(mockHomeViewController.fruits[0].name) == "Banana"
                     expect(mockHomeViewController.fruits[0].price) == 10.5
                 }
 
                 it("Test func viewDidLoad() was send to class implement it") {
-                    homePresenter.viewDidLoad()
-                    expect(mockHomeInteractor.check) == true
+                    defaultHomePresenter.viewDidLoad()
+                    expect(mockDefaultListFruitInteractor.check) == true
                 }
             }
         }
