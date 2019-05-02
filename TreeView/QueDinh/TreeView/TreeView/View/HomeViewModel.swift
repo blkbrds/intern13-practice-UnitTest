@@ -31,11 +31,11 @@ final class HomeViewModel {
 
     func numberOfItemNeedDelete(at indexPath: IndexPath) -> Int {
         var count = 0
-        if datas[indexPath.row].level == 1 && datas[indexPath.row].check == false {
+        if datas[indexPath.row].level == 1 && datas[indexPath.row].isExplain == false {
             for i in 1...datas[indexPath.row].child.count {
-                if !datas[indexPath.row].child[i - 1].check {
+                if !datas[indexPath.row].child[i - 1].isExplain {
                     count += datas[indexPath.row + i].child.count
-                    datas[indexPath.row + i].check = true
+                    datas[indexPath.row + i].isExplain = true
                 }
             }
             return count + datas[indexPath.row].child.count

@@ -50,14 +50,14 @@ extension HomeViewController: UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
         let number = viewModel.datas[indexPath.row].child.count
         if number != 0 {
-            if viewModel.datas[indexPath.row].check {
+            if viewModel.datas[indexPath.row].isExplain {
                 viewModel.addRow(atIndexPath: indexPath)
                 var indexPaths = [IndexPath]()
                 for i in 1...number {
                     let indexPath = IndexPath(row: indexPath.row + i, section: 0)
                     indexPaths.append(indexPath)
                 }
-                viewModel.datas[indexPath.row].check = false
+                viewModel.datas[indexPath.row].isExplain = false
                 tableView.insertRows(at: indexPaths, with: .bottom)
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
                     self.tableView.reloadData()
@@ -71,7 +71,7 @@ extension HomeViewController: UITableViewDelegate {
                     indexPaths.append(indexPath)
                 }
                 tableView.deleteRows(at: indexPaths, with: .bottom)
-                viewModel.datas[indexPath.row].check = true
+                viewModel.datas[indexPath.row].isExplain = true
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
                     self.tableView.reloadData()
                 }
@@ -90,7 +90,7 @@ extension HomeViewController: HomeCellDelegate {
             let indexPath = IndexPath(row: indexPath.row + 1, section: 0)
             indexPaths.append(indexPath)
             tableView.insertRows(at: indexPaths, with: .left)
-            viewModel.datas[indexPath.row - 1].check = false
+            viewModel.datas[indexPath.row - 1].isExplain = false
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
                 self.tableView.reloadData()
             }

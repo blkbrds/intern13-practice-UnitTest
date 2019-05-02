@@ -20,7 +20,7 @@ final class HomeCellViewModel {
         return data?.level
     }
     var check: Bool? {
-        return data?.check
+        return data?.isExplain
     }
     
     init(data: DataManager, indexPath: IndexPath, numberOfChildren: Int) {

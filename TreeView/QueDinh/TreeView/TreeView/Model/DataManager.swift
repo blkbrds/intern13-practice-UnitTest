@@ -11,7 +11,7 @@ import Foundation
 final class DataManager {
     var name = ""
     var child: [DataManager] = []
-    var check = true
+    var isExplain = true
     var level = 0
     
     init() { }
