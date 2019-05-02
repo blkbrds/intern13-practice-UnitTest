@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		30760C13227018C300946405 /* FruitServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30760C11227018C300946405 /* FruitServicesTests.swift */; };
 		30760C14227018C300946405 /* UserServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30760C12227018C300946405 /* UserServicesTests.swift */; };
+		30A27A762269607000C058BA /* LoginPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A27A752269607000C058BA /* LoginPresenterTests.swift */; };
+		30A27A7B2269616F00C058BA /* MockDefaultLoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A27A7A2269616F00C058BA /* MockDefaultLoginRouter.swift */; };
+		30A27A7D226961E000C058BA /* MockDefaultLoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A27A7C226961E000C058BA /* MockDefaultLoginInteractor.swift */; };
 		30A27A83226989E000C058BA /* ListFruitInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A27A82226989E000C058BA /* ListFruitInteractorTests.swift */; };
 		30A27A852269A84500C058BA /* FruitServicesStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A27A842269A84500C058BA /* FruitServicesStub.swift */; };
 		30A27A872269AB0400C058BA /* MockHomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A27A862269AB0400C058BA /* MockHomePresenter.swift */; };
-		30F7FECD22682F7000374DC4 /* HomePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F7FECC22682F7000374DC4 /* HomePresenterTests.swift */; };
-		30F7FECF2268581300374DC4 /* MockHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F7FECE2268581300374DC4 /* MockHomeViewController.swift */; };
-		30F7FED12268656B00374DC4 /* MockDefaultHomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F7FED02268656B00374DC4 /* MockDefaultHomeRouter.swift */; };
-		30F7FED32268658800374DC4 /* MockDefaultListFruitInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F7FED22268658800374DC4 /* MockDefaultListFruitInteractor.swift */; };
+		30DAF70422701A550062DA0F /* MockDefaultHomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DAF70022701A550062DA0F /* MockDefaultHomeRouter.swift */; };
+		30DAF70522701A550062DA0F /* MockHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DAF70122701A550062DA0F /* MockHomeViewController.swift */; };
+		30DAF70622701A550062DA0F /* MockDefaultListFruitInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DAF70222701A550062DA0F /* MockDefaultListFruitInteractor.swift */; };
+		30DAF70722701A550062DA0F /* HomePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DAF70322701A550062DA0F /* HomePresenterTests.swift */; };
 		74E22BA7225453FB00D7FEBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E22BA6225453FB00D7FEBB /* AppDelegate.swift */; };
 		74E22BAE225453FC00D7FEBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74E22BAD225453FC00D7FEBB /* Assets.xcassets */; };
 		74E22BB1225453FC00D7FEBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74E22BAF225453FC00D7FEBB /* LaunchScreen.storyboard */; };
@@ -61,15 +64,18 @@
 		1AD9F92AA437F62B91B0D68E /* Pods-ViperSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperSampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViperSampleTests/Pods-ViperSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		30760C11227018C300946405 /* FruitServicesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitServicesTests.swift; sourceTree = "<group>"; };
 		30760C12227018C300946405 /* UserServicesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserServicesTests.swift; sourceTree = "<group>"; };
+		30A27A752269607000C058BA /* LoginPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTests.swift; sourceTree = "<group>"; };
+		30A27A7A2269616F00C058BA /* MockDefaultLoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDefaultLoginRouter.swift; sourceTree = "<group>"; };
+		30A27A7C226961E000C058BA /* MockDefaultLoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDefaultLoginInteractor.swift; sourceTree = "<group>"; };
 		30A27A82226989E000C058BA /* ListFruitInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFruitInteractorTests.swift; sourceTree = "<group>"; };
 		30A27A842269A84500C058BA /* FruitServicesStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitServicesStub.swift; sourceTree = "<group>"; };
 		30A27A862269AB0400C058BA /* MockHomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomePresenter.swift; sourceTree = "<group>"; };
+		30DAF70022701A550062DA0F /* MockDefaultHomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockDefaultHomeRouter.swift; sourceTree = "<group>"; };
+		30DAF70122701A550062DA0F /* MockHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockHomeViewController.swift; sourceTree = "<group>"; };
+		30DAF70222701A550062DA0F /* MockDefaultListFruitInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockDefaultListFruitInteractor.swift; sourceTree = "<group>"; };
+		30DAF70322701A550062DA0F /* HomePresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenterTests.swift; sourceTree = "<group>"; };
 		30F7FEBF2268230200374DC4 /* ViperSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30F7FEC32268230200374DC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		30F7FECC22682F7000374DC4 /* HomePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterTests.swift; sourceTree = "<group>"; };
-		30F7FECE2268581300374DC4 /* MockHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomeViewController.swift; sourceTree = "<group>"; };
-		30F7FED02268656B00374DC4 /* MockDefaultHomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDefaultHomeRouter.swift; sourceTree = "<group>"; };
-		30F7FED22268658800374DC4 /* MockDefaultListFruitInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDefaultListFruitInteractor.swift; sourceTree = "<group>"; };
 		74E22BA3225453FB00D7FEBB /* ViperSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E22BA6225453FB00D7FEBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74E22BAD225453FC00D7FEBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -140,6 +146,16 @@
 				30760C12227018C300946405 /* UserServicesTests.swift */,
 			);
 			path = Services;
+            sourceTree = "<group>";
+            };
+		30A27A77226960E100C058BA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				30A27A752269607000C058BA /* LoginPresenterTests.swift */,
+				30A27A7A2269616F00C058BA /* MockDefaultLoginRouter.swift */,
+				30A27A7C226961E000C058BA /* MockDefaultLoginInteractor.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		30A27A7F2269892600C058BA /* Interactor */ = {
@@ -168,6 +184,17 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		30DAF6FF22701A550062DA0F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				30DAF70022701A550062DA0F /* MockDefaultHomeRouter.swift */,
+				30DAF70122701A550062DA0F /* MockHomeViewController.swift */,
+				30DAF70222701A550062DA0F /* MockDefaultListFruitInteractor.swift */,
+				30DAF70322701A550062DA0F /* HomePresenterTests.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		30F7FEC02268230200374DC4 /* ViperSampleTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,10 +209,8 @@
 		30F7FEC9226829A000374DC4 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				30F7FECC22682F7000374DC4 /* HomePresenterTests.swift */,
-				30F7FECE2268581300374DC4 /* MockHomeViewController.swift */,
-				30F7FED02268656B00374DC4 /* MockDefaultHomeRouter.swift */,
-				30F7FED22268658800374DC4 /* MockDefaultListFruitInteractor.swift */,
+				30DAF6FF22701A550062DA0F /* Home */,
+				30A27A77226960E100C058BA /* Login */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -607,8 +632,15 @@
 				30760C13227018C300946405 /* FruitServicesTests.swift in Sources */,
 				30760C14227018C300946405 /* UserServicesTests.swift in Sources */,
 				30F7FED12268656B00374DC4 /* MockDefaultHomeRouter.swift in Sources */,
+				30A27A7B2269616F00C058BA /* MockDefaultLoginRouter.swift in Sources */,
+				30A27A7D226961E000C058BA /* MockDefaultLoginInteractor.swift in Sources */,
+				30DAF70522701A550062DA0F /* MockHomeViewController.swift in Sources */,
+				30A27A762269607000C058BA /* LoginPresenterTests.swift in Sources */,
 				30A27A852269A84500C058BA /* FruitServicesStub.swift in Sources */,
+				30DAF70722701A550062DA0F /* HomePresenterTests.swift in Sources */,
 				30A27A83226989E000C058BA /* ListFruitInteractorTests.swift in Sources */,
+				30DAF70422701A550062DA0F /* MockDefaultHomeRouter.swift in Sources */,
+				30DAF70622701A550062DA0F /* MockDefaultListFruitInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
