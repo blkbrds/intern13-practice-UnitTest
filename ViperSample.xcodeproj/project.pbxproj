@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30760C13227018C300946405 /* FruitServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30760C11227018C300946405 /* FruitServicesTests.swift */; };
+		30760C14227018C300946405 /* UserServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30760C12227018C300946405 /* UserServicesTests.swift */; };
 		30A27A762269607000C058BA /* LoginPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A27A752269607000C058BA /* LoginPresenterTests.swift */; };
 		30A27A7B2269616F00C058BA /* MockDefaultLoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A27A7A2269616F00C058BA /* MockDefaultLoginRouter.swift */; };
 		30A27A7D226961E000C058BA /* MockDefaultLoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A27A7C226961E000C058BA /* MockDefaultLoginInteractor.swift */; };
@@ -60,6 +62,8 @@
 		037F69340C7DBB0F335C3C43 /* Pods-ViperSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperSampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperSampleTests/Pods-ViperSampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		0C0BB3C94CB015D9CDC1E2C8 /* Pods-ViperSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperSample/Pods-ViperSample.release.xcconfig"; sourceTree = "<group>"; };
 		1AD9F92AA437F62B91B0D68E /* Pods-ViperSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperSampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViperSampleTests/Pods-ViperSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		30760C11227018C300946405 /* FruitServicesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitServicesTests.swift; sourceTree = "<group>"; };
+		30760C12227018C300946405 /* UserServicesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserServicesTests.swift; sourceTree = "<group>"; };
 		30A27A752269607000C058BA /* LoginPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTests.swift; sourceTree = "<group>"; };
 		30A27A7A2269616F00C058BA /* MockDefaultLoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDefaultLoginRouter.swift; sourceTree = "<group>"; };
 		30A27A7C226961E000C058BA /* MockDefaultLoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDefaultLoginInteractor.swift; sourceTree = "<group>"; };
@@ -135,6 +139,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		30760C10227018C300946405 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				30760C11227018C300946405 /* FruitServicesTests.swift */,
+				30760C12227018C300946405 /* UserServicesTests.swift */,
+			);
+			path = Services;
+            sourceTree = "<group>";
+            };
 		30A27A77226960E100C058BA /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +198,7 @@
 		30F7FEC02268230200374DC4 /* ViperSampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				30760C10227018C300946405 /* Services */,
 				30A27A7F2269892600C058BA /* Interactor */,
 				30F7FEC9226829A000374DC4 /* Presenter */,
 				30F7FEC32268230200374DC4 /* Info.plist */,
@@ -612,6 +626,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				30A27A872269AB0400C058BA /* MockHomePresenter.swift in Sources */,
+				30F7FECF2268581300374DC4 /* MockHomeViewController.swift in Sources */,
+				30F7FECD22682F7000374DC4 /* HomePresenterTests.swift in Sources */,
+				30F7FED32268658800374DC4 /* MockDefaultListFruitInteractor.swift in Sources */,
+				30760C13227018C300946405 /* FruitServicesTests.swift in Sources */,
+				30760C14227018C300946405 /* UserServicesTests.swift in Sources */,
+				30F7FED12268656B00374DC4 /* MockDefaultHomeRouter.swift in Sources */,
 				30A27A7B2269616F00C058BA /* MockDefaultLoginRouter.swift in Sources */,
 				30A27A7D226961E000C058BA /* MockDefaultLoginInteractor.swift in Sources */,
 				30DAF70522701A550062DA0F /* MockHomeViewController.swift in Sources */,
