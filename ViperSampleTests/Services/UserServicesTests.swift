@@ -14,18 +14,18 @@ import Nimble
 final class UserServicesTests: QuickSpec {
 
     override func spec() {
-        var services: DefaultUserServices!
+        var defaultUserServices: DefaultUserServices!
 
         describe("Test UserServices") {
 
             context("Test UserServices's functions") {
 
                 beforeEach {
-                    services = DefaultUserServices()
+                    defaultUserServices = DefaultUserServices()
                 }
 
                 it("Test should be return invalid email") {
-                    services.login(email: "ads", password: "123", completion: { (result) in
+                    defaultUserServices.login(email: "ads", password: "123", completion: { (result) in
                         switch result {
                         case .success:
                             fail()
@@ -36,7 +36,7 @@ final class UserServicesTests: QuickSpec {
                 }
 
                 it("Test login success") {
-                    services.login(email: "abc@gmail.com", password: "123456", completion: { (result) in
+                    defaultUserServices.login(email: "abc@gmail.com", password: "123456", completion: { (result) in
                         switch result {
                         case .success(let value):
                             expect(value.email) == "abc@gmail.com"
@@ -48,7 +48,7 @@ final class UserServicesTests: QuickSpec {
                 }
 
                 it("Test should be return login fail") {
-                    services.login(email: "abdddddc@gmail.com", password: "1234", completion: { (result) in
+                    defaultUserServices.login(email: "abdddddc@gmail.com", password: "1234", completion: { (result) in
                         switch result {
                         case .success:
                             fail()
