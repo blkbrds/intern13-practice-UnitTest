@@ -44,7 +44,7 @@ final class HomeViewModel {
         }
     }
     
-    func addRow2(at indexPath: IndexPath) {
+    func insertRows(at indexPath: IndexPath) {
         let data = DataManager(name: "Add row", level: 3)
         datas[indexPath.row].child.insert(data, at: 0)
         datas.insert(data, at: indexPath.row + 1)

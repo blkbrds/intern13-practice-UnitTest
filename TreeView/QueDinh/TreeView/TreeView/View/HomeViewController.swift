@@ -85,7 +85,7 @@ extension HomeViewController: HomeCellDelegate {
     func cell(_ view: HomeCell, needPerformAction action: HomeCell.Action) {
         switch action {
         case .addRow(let indexPath):
-            viewModel.addRow2(at: indexPath)
+            viewModel.insertRows(at: indexPath)
             var indexPaths = [IndexPath]()
             let indexPath = IndexPath(row: indexPath.row + 1, section: 0)
             indexPaths.append(indexPath)
