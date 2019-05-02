@@ -9,8 +9,10 @@
 import Foundation
 
 struct User {
-    let email: String
-    let name: String
+    var email: String = ""
+    var name: String = ""
+
+    init() { }
     
     init(entity: UserEntity) {
         email = entity.email
