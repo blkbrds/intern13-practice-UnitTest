@@ -52,6 +52,10 @@ final class HomeCell: UITableViewCell {
             backgView.backgroundColor = #colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 0.7229038292)
             leftSpaceNSLayoutConstraint.constant = CGFloat(80)
             leftSpaceChildrenNSLayoutConstraint.constant = CGFloat(80)
+        } else if viewModel?.level == 1 {
+            backgView.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+            leftSpaceNSLayoutConstraint.constant = CGFloat(25)
+            leftSpaceChildrenNSLayoutConstraint.constant = CGFloat(25)
         }
     }
     
