@@ -1,4 +1,5 @@
 PODS:
+  - MVVM-Swift (1.1.0)
   - Nimble (8.0.1)
   - OHHTTPStubs/Core (7.0.0)
   - OHHTTPStubs/Default (7.0.0):
@@ -14,23 +15,34 @@ PODS:
   - OHHTTPStubs/Swift (7.0.0):
     - OHHTTPStubs/Default
   - Quick (2.0.0)
+  - SwiftLint (0.30.1)
+  - SwiftUtils (4.2.1)
 
 DEPENDENCIES:
+  - MVVM-Swift (= 1.1.0)
   - Nimble
   - OHHTTPStubs/Swift
   - Quick
+  - SwiftLint (= 0.30.1)
+  - SwiftUtils (= 4.2.1)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - MVVM-Swift
     - Nimble
     - OHHTTPStubs
     - Quick
+    - SwiftLint
+    - SwiftUtils
 
 SPEC CHECKSUMS:
+  MVVM-Swift: 54749cc12bb30af41632f30a2c576a18bf9e4bc8
   Nimble: 45f786ae66faa9a709624227fae502db55a8bdd0
   OHHTTPStubs: ef33a2c353110d306bb98f695435ec56ff5a26c3
   Quick: ce1276c7c27ba2da3cb2fd0cde053c3648b3b22d
+  SwiftLint: a54bf1fe12b55c68560eb2a7689dfc81458508f7
+  SwiftUtils: fa346feeac5a25eab7ea5d59f1857c6253cb8ab1
 
-PODFILE CHECKSUM: 7e2830ed3a88229d1c8b1ee63a4a02cbd1757951
+PODFILE CHECKSUM: 71a9cd0f0c6e046fa9cdf62f0b02a7138be587f6
 
 COCOAPODS: 1.6.1

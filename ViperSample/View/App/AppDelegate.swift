@@ -16,7 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        window?.rootViewController = UINavigationController(rootViewController: loginViewController())
+//        window?.rootViewController = UINavigationController(rootViewController: loginViewController())
+        
+        let vc = TreeTableViewController()
+        window?.rootViewController = vc
         window?.makeKeyAndVisible()
         return true
     }

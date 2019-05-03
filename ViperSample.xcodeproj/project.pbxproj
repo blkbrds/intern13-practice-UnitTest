@@ -19,6 +19,16 @@
 		30DAF70522701A550062DA0F /* MockHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DAF70122701A550062DA0F /* MockHomeViewController.swift */; };
 		30DAF70622701A550062DA0F /* MockDefaultListFruitInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DAF70222701A550062DA0F /* MockDefaultListFruitInteractor.swift */; };
 		30DAF70722701A550062DA0F /* HomePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DAF70322701A550062DA0F /* HomePresenterTests.swift */; };
+		30F3C2EF227C3199009847B0 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F3C2E1227C3199009847B0 /* Tree.swift */; };
+		30F3C2F0227C3199009847B0 /* TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30F3C2E5227C3199009847B0 /* TableCell.xib */; };
+		30F3C2F1227C3199009847B0 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F3C2E6227C3199009847B0 /* TableCell.swift */; };
+		30F3C2F2227C3199009847B0 /* TableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F3C2E7227C3199009847B0 /* TableCellViewModel.swift */; };
+		30F3C2F3227C3199009847B0 /* ExpandCollapsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F3C2E9227C3199009847B0 /* ExpandCollapsTableCell.swift */; };
+		30F3C2F4227C3199009847B0 /* ExpandCollapsTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30F3C2EA227C3199009847B0 /* ExpandCollapsTableCell.xib */; };
+		30F3C2F5227C3199009847B0 /* ExpandCollapsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F3C2EB227C3199009847B0 /* ExpandCollapsCellViewModel.swift */; };
+		30F3C2F6227C3199009847B0 /* TreeTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F3C2EC227C3199009847B0 /* TreeTableViewModel.swift */; };
+		30F3C2F7227C3199009847B0 /* TreeTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30F3C2ED227C3199009847B0 /* TreeTableViewController.xib */; };
+		30F3C2F8227C3199009847B0 /* TreeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F3C2EE227C3199009847B0 /* TreeTableViewController.swift */; };
 		74E22BA7225453FB00D7FEBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E22BA6225453FB00D7FEBB /* AppDelegate.swift */; };
 		74E22BAE225453FC00D7FEBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74E22BAD225453FC00D7FEBB /* Assets.xcassets */; };
 		74E22BB1225453FC00D7FEBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74E22BAF225453FC00D7FEBB /* LaunchScreen.storyboard */; };
@@ -74,6 +84,16 @@
 		30DAF70122701A550062DA0F /* MockHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockHomeViewController.swift; sourceTree = "<group>"; };
 		30DAF70222701A550062DA0F /* MockDefaultListFruitInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockDefaultListFruitInteractor.swift; sourceTree = "<group>"; };
 		30DAF70322701A550062DA0F /* HomePresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenterTests.swift; sourceTree = "<group>"; };
+		30F3C2E1227C3199009847B0 /* Tree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
+		30F3C2E5227C3199009847B0 /* TableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableCell.xib; sourceTree = "<group>"; };
+		30F3C2E6227C3199009847B0 /* TableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
+		30F3C2E7227C3199009847B0 /* TableCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCellViewModel.swift; sourceTree = "<group>"; };
+		30F3C2E9227C3199009847B0 /* ExpandCollapsTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandCollapsTableCell.swift; sourceTree = "<group>"; };
+		30F3C2EA227C3199009847B0 /* ExpandCollapsTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExpandCollapsTableCell.xib; sourceTree = "<group>"; };
+		30F3C2EB227C3199009847B0 /* ExpandCollapsCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandCollapsCellViewModel.swift; sourceTree = "<group>"; };
+		30F3C2EC227C3199009847B0 /* TreeTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeTableViewModel.swift; sourceTree = "<group>"; };
+		30F3C2ED227C3199009847B0 /* TreeTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreeTableViewController.xib; sourceTree = "<group>"; };
+		30F3C2EE227C3199009847B0 /* TreeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeTableViewController.swift; sourceTree = "<group>"; };
 		30F7FEBF2268230200374DC4 /* ViperSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30F7FEC32268230200374DC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74E22BA3225453FB00D7FEBB /* ViperSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,8 +166,8 @@
 				30760C12227018C300946405 /* UserServicesTests.swift */,
 			);
 			path = Services;
-            sourceTree = "<group>";
-            };
+			sourceTree = "<group>";
+		};
 		30A27A77226960E100C058BA /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +215,63 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		30F3C2DF227C3199009847B0 /* TreeTableView */ = {
+			isa = PBXGroup;
+			children = (
+				30F3C2E0227C3199009847B0 /* Model */,
+				30F3C2E2227C3199009847B0 /* View */,
+			);
+			path = TreeTableView;
+			sourceTree = "<group>";
+		};
+		30F3C2E0227C3199009847B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				30F3C2E1227C3199009847B0 /* Tree.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		30F3C2E2227C3199009847B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				30F3C2E3227C3199009847B0 /* Cell */,
+				30F3C2EC227C3199009847B0 /* TreeTableViewModel.swift */,
+				30F3C2ED227C3199009847B0 /* TreeTableViewController.xib */,
+				30F3C2EE227C3199009847B0 /* TreeTableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		30F3C2E3227C3199009847B0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				30F3C2E4227C3199009847B0 /* LvCell */,
+				30F3C2E8227C3199009847B0 /* ExpandCollapse */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		30F3C2E4227C3199009847B0 /* LvCell */ = {
+			isa = PBXGroup;
+			children = (
+				30F3C2E5227C3199009847B0 /* TableCell.xib */,
+				30F3C2E6227C3199009847B0 /* TableCell.swift */,
+				30F3C2E7227C3199009847B0 /* TableCellViewModel.swift */,
+			);
+			path = LvCell;
+			sourceTree = "<group>";
+		};
+		30F3C2E8227C3199009847B0 /* ExpandCollapse */ = {
+			isa = PBXGroup;
+			children = (
+				30F3C2E9227C3199009847B0 /* ExpandCollapsTableCell.swift */,
+				30F3C2EA227C3199009847B0 /* ExpandCollapsTableCell.xib */,
+				30F3C2EB227C3199009847B0 /* ExpandCollapsCellViewModel.swift */,
+			);
+			path = ExpandCollapse;
+			sourceTree = "<group>";
+		};
 		30F7FEC02268230200374DC4 /* ViperSampleTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +298,7 @@
 				F463F1447D126632A4C575B1 /* Frameworks */,
 				23E7074C5FA4D0352E8C0498 /* Pods */,
 				74E22BA4225453FB00D7FEBB /* Products */,
+				30F3C2DF227C3199009847B0 /* TreeTableView */,
 				74E22BA5225453FB00D7FEBB /* ViperSample */,
 				30F7FEC02268230200374DC4 /* ViperSampleTests */,
 			);
@@ -540,7 +618,10 @@
 				74E22BF32254561E00D7FEBB /* LoginViewController.xib in Resources */,
 				74E22BB1225453FC00D7FEBB /* LaunchScreen.storyboard in Resources */,
 				74E22BAE225453FC00D7FEBB /* Assets.xcassets in Resources */,
+				30F3C2F7227C3199009847B0 /* TreeTableViewController.xib in Resources */,
 				74E22BF22254561E00D7FEBB /* HomeCell.xib in Resources */,
+				30F3C2F0227C3199009847B0 /* TableCell.xib in Resources */,
+				30F3C2F4227C3199009847B0 /* ExpandCollapsTableCell.xib in Resources */,
 				74E22BEF2254561E00D7FEBB /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -557,17 +638,21 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ViperSample/Pods-ViperSample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MVVM-Swift/MVVM.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftUtils/SwiftUtils.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MVVM.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftUtils.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -626,12 +711,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				30A27A872269AB0400C058BA /* MockHomePresenter.swift in Sources */,
-				30F7FECF2268581300374DC4 /* MockHomeViewController.swift in Sources */,
-				30F7FECD22682F7000374DC4 /* HomePresenterTests.swift in Sources */,
-				30F7FED32268658800374DC4 /* MockDefaultListFruitInteractor.swift in Sources */,
 				30760C13227018C300946405 /* FruitServicesTests.swift in Sources */,
 				30760C14227018C300946405 /* UserServicesTests.swift in Sources */,
-				30F7FED12268656B00374DC4 /* MockDefaultHomeRouter.swift in Sources */,
 				30A27A7B2269616F00C058BA /* MockDefaultLoginRouter.swift in Sources */,
 				30A27A7D226961E000C058BA /* MockDefaultLoginInteractor.swift in Sources */,
 				30DAF70522701A550062DA0F /* MockHomeViewController.swift in Sources */,
@@ -648,8 +729,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30F3C2EF227C3199009847B0 /* Tree.swift in Sources */,
 				74E22BF42254561E00D7FEBB /* LoginViewController.swift in Sources */,
 				74E22BDA225455E900D7FEBB /* Fruit.swift in Sources */,
+				30F3C2F6227C3199009847B0 /* TreeTableViewModel.swift in Sources */,
+				30F3C2F8227C3199009847B0 /* TreeTableViewController.swift in Sources */,
 				74E22BCD2254557200D7FEBB /* Completion.swift in Sources */,
 				74E22BE42254560C00D7FEBB /* LoginPresenter.swift in Sources */,
 				74E22BE52254560C00D7FEBB /* HomePresenter.swift in Sources */,
@@ -659,15 +743,19 @@
 				74E22BF82254564400D7FEBB /* FruitServices.swift in Sources */,
 				74E22BDE225455F900D7FEBB /* ListFruitInteractor.swift in Sources */,
 				74E22BD22254559200D7FEBB /* LoginRouter.swift in Sources */,
+				30F3C2F5227C3199009847B0 /* ExpandCollapsCellViewModel.swift in Sources */,
 				74E22BC92254554700D7FEBB /* UITextFieldExt.swift in Sources */,
+				30F3C2F3227C3199009847B0 /* ExpandCollapsTableCell.swift in Sources */,
 				74E22BC82254554700D7FEBB /* StringExt.swift in Sources */,
 				74E22BF02254561E00D7FEBB /* HomeViewController.swift in Sources */,
 				74E22BA7225453FB00D7FEBB /* AppDelegate.swift in Sources */,
 				74E22BF12254561E00D7FEBB /* HomeCell.swift in Sources */,
 				74E22BDF225455F900D7FEBB /* LoginInteractor.swift in Sources */,
+				30F3C2F1227C3199009847B0 /* TableCell.swift in Sources */,
 				74E22BD6225455D600D7FEBB /* UserEntity.swift in Sources */,
 				74E22BDB225455E900D7FEBB /* User.swift in Sources */,
 				74E22BF72254564400D7FEBB /* UserServices.swift in Sources */,
+				30F3C2F2227C3199009847B0 /* TableCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
