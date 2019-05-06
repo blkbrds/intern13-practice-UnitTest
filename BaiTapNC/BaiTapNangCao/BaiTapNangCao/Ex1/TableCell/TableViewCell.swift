@@ -8,10 +8,6 @@
 
 import UIKit
 
-protocol TableViewCellDelegate: class {
-    func cell(_ cell: TableViewCell, needPerformAction action: TableViewCell.Action)
-}
-
 final class TableViewCell: UITableViewCell {
 
     enum Action {
@@ -23,7 +19,7 @@ final class TableViewCell: UITableViewCell {
     @IBOutlet private weak var levelConstrains: NSLayoutConstraint!
     @IBOutlet private weak var addButton: UIButton!
 
-    weak var delegate: TableViewCellDelegate?
+    var didTapAddButton: (() -> Void)?
 
     var viewModel: TableCellViewModel? {
         didSet {
@@ -37,6 +33,10 @@ final class TableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+    }
+
+    func setTagButton(index: Int) {
+        self.addButton.tag = index
     }
 
     private func updateView() {
@@ -69,6 +69,6 @@ final class TableViewCell: UITableViewCell {
     }
 
     @IBAction func addButtonTouchUpInside(_ sender: Any) {
-        delegate?.cell(self, needPerformAction: .addRow)
+        didTapAddButton?()
     }
 }

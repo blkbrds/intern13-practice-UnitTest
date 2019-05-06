@@ -11,9 +11,9 @@ import Foundation
 final class Ex1ViewModel {
 
     private var rootData = Dummy.baseData
+    private var showRow = 0
     var deleteIndexPaths: [IndexPath] = []
     var insertIndexPaths: [IndexPath] = []
-    private var insertRow = 0
     var tempDatas: [Schema] = []
 
     func getRootBranch() {
@@ -39,48 +39,68 @@ final class Ex1ViewModel {
         return TableCellViewModel(schema: tempDatas[indexPath.row])
     }
 
-    func deleteData(data: Schema) {
+    func hideData(data: Schema) {
         deleteIndexPaths = []
-        getDeleteIndexPaths(data: data)
+        getChildIndexPaths(data: data)
         data.isOpen = false
         for index in deleteIndexPaths.reversed() {
             tempDatas.remove(at: index.row)
         }
     }
 
-    private func getDeleteIndexPaths(data: Schema) {
+    private func getChildIndexPaths(data: Schema) {
         if data.isOpen {
             for child in data.childs {
                 guard let childRow = tempDatas.firstIndex(where: { $0.id == child.id }) else { return }
                 let indexPath = IndexPath(row: childRow, section: 0)
                 deleteIndexPaths.append(indexPath)
                 if child.isOpen {
-                    getDeleteIndexPaths(data: child)
+                    getChildIndexPaths(data: child)
                 }
             }
         }
     }
 
-    func insertData(data: Schema) {
+    func showData(data: Schema) {
         guard !data.childs.isEmpty else { return }
         insertIndexPaths = []
-        getInsertIndexPaths(data: data)
+        getShowIndexPaths(data: data)
         data.isOpen = true
     }
 
-    private func getInsertIndexPaths(data: Schema) {
+    private func getShowIndexPaths(data: Schema) {
         guard let row = tempDatas.firstIndex(where: { $0.id == data.id }) else { return }
-        insertRow = row + 1
+        showRow = row + 1
         for child in data.childs {
-            let childRow = insertRow
+            let childRow = showRow
             let indexPath = IndexPath(row: childRow, section: 0)
             insertIndexPaths.append(indexPath)
             tempDatas.insert(child, at: childRow)
-            insertRow += 1
+            showRow += 1
             if child.isOpen {
-                getInsertIndexPaths(data: child)
+                getShowIndexPaths(data: child)
             }
         }
+    }
+
+    func deleteData(data: Schema) {
+        deleteIndexPaths = []
+        guard let row = tempDatas.firstIndex(where: { $0.id == data.id }) else { return }
+        deleteIndexPaths.append(IndexPath(row: row, section: 0))
+        getChildIndexPaths(data: data)
+        for index in deleteIndexPaths.reversed() {
+            tempDatas.remove(at: index.row)
+        }
+    }
+
+    func addData(indexPath: IndexPath) {
+        guard let lastID = tempDatas.last?.id else {
+            tempDatas.append(Schema())
+            return
+        }
+        let schema = Schema(title: "Added value", id: lastID + 1)
+        schema.isOpen = false
+        tempDatas.insert(schema, at: indexPath.row)
     }
 }
 

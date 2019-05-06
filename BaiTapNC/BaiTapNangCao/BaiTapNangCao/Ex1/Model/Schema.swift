@@ -11,8 +11,8 @@ import Foundation
 final class Schema {
 
     var isOpen: Bool = false
-    var title: String
-    var id: Int
+    var title = ""
+    var id = 0
 
     var parent: Schema? {
         didSet {
@@ -39,4 +39,6 @@ final class Schema {
         self.title = title
         self.id = id
     }
+
+    init() { }
 }

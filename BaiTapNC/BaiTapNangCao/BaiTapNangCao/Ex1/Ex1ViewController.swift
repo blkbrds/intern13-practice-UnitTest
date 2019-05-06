@@ -23,7 +23,7 @@ final class Ex1ViewController: UIViewController {
 
     private func configView() {
         configTableView()
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(editButtonTouchUpInside))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Edit", style: .done, target: self, action: #selector(updateBarButton))
     }
 
     private func configTableView() {
@@ -36,14 +36,13 @@ final class Ex1ViewController: UIViewController {
         viewModel.getRootBranch()
     }
 
-    @objc private func editButtonTouchUpInside() {
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneButtonTouchUpInside))
-        tableView.isEditing = true
-    }
-
-    @objc private func doneButtonTouchUpInside() {
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(editButtonTouchUpInside))
-        tableView.isEditing = false
+    @objc private func updateBarButton() {
+        if tableView.isEditing {
+            navigationItem.rightBarButtonItem?.title = "Edit"
+        } else {
+            navigationItem.rightBarButtonItem?.title = "Done"
+        }
+        tableView.isEditing = !tableView.isEditing
     }
 }
 
@@ -56,8 +55,19 @@ extension Ex1ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: id, for: indexPath) as? TableViewCell else { return UITableViewCell() }
         cell.viewModel = viewModel.tableCellViewModel(indexPath: indexPath)
-        cell.delegate = self
+        cell.didTapAddButton = { [weak self] in
+            guard let this = self else { return }
+            this.viewModel.addData(indexPath: indexPath)
+            tableView.insertRows(at: [IndexPath(row: indexPath.row + 1, section: indexPath.section)], with: .automatic)
+        }
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            viewModel.deleteData(data: viewModel.tempDatas[indexPath.row])
+            tableView.deleteRows(at: viewModel.deleteIndexPaths, with: .automatic)
+        }
     }
 }
 
@@ -68,21 +78,12 @@ extension Ex1ViewController: UITableViewDelegate {
         let data = viewModel.tempDatas[indexPath.row]
         guard !data.childs.isEmpty else { return }
         if data.isOpen {
-            viewModel.deleteData(data: data)
+            viewModel.hideData(data: data)
             tableView.deleteRows(at: viewModel.deleteIndexPaths, with: .none)
         } else {
-            viewModel.insertData(data: data)
+            viewModel.showData(data: data)
             tableView.insertRows(at: viewModel.insertIndexPaths, with: .none)
         }
         tableView.reloadRows(at: [indexPath], with: .automatic)
-    }
-}
-
-extension Ex1ViewController: TableViewCellDelegate {
-    func cell(_ cell: TableViewCell, needPerformAction action: TableViewCell.Action) {
-        switch action {
-        case .addRow:
-            print("xxx")
-        }
     }
 }
