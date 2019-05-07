@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import GoogleMaps
+import UserNotifications
 
+let googleAPIKey = "AIzaSyDCNjk_eNkQub13THHAy4fH-ME3tb9in34"
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    lazy var locationManager = CLLocationManager()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
@@ -24,7 +27,63 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navigationController = UINavigationController(rootViewController: vc)
         window?.rootViewController = navigationController
 
+        configGoogleAPI()
+        configLocation()
+        configNotification()
+
         return true
+    }
+
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        application.applicationIconBadgeNumber = 0
+        UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
+        UNUserNotificationCenter.current().removeAllDeliveredNotifications()
+    }
+
+    private func configGoogleAPI() {
+        GMSServices.provideAPIKey(googleAPIKey)
+    }
+
+    private func configLocation() {
+        locationManager.delegate = self
+        locationManager.requestAlwaysAuthorization()
+    }
+
+    private func configNotification() {
+        let options: UNAuthorizationOptions = [.badge, .sound, .alert]
+        UNUserNotificationCenter.current().requestAuthorization(options: options) { (success, error) in
+            if let error = error {
+                print(error)
+            }
+        }
+    }
+
+    private func handleEvent() {
+        if UIApplication.shared.applicationState == .active {
+            let action = UIAlertAction(title: "OK", style: .destructive, handler: nil)
+            let alert = UIAlertController(title: "ALERT", message: "SAFE ZONE Entered", preferredStyle: .alert)
+            alert.addAction(action)
+            window?.rootViewController?.present(alert, animated: true)
+        } else {
+            let notifyContent = UNMutableNotificationContent()
+            notifyContent.sound = UNNotificationSound.default
+            notifyContent.body = "SAFE ZONE Entered"
+            notifyContent.badge = UIApplication.shared.applicationIconBadgeNumber + 1 as NSNumber
+            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
+            let request = UNNotificationRequest(identifier: "location_changed", content: notifyContent, trigger: trigger)
+            UNUserNotificationCenter.current().add(request) { (error) in
+                if let error = error {
+                    print(error)
+                }
+            }
+        }
+    }
+}
+
+extension AppDelegate: CLLocationManagerDelegate {
+
+    func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
+        handleEvent()
     }
 }
 

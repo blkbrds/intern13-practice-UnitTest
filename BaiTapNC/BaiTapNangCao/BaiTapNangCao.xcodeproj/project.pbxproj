@@ -28,6 +28,11 @@
 		2B14A2DE227BD1E600DCE9B9 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B14A2DC227BD1E600DCE9B9 /* TableViewCell.xib */; };
 		2B14A2E0227BD1FB00DCE9B9 /* TableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B14A2DF227BD1FB00DCE9B9 /* TableCellViewModel.swift */; };
 		2B14A2E3227BD59200DCE9B9 /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B14A2E2227BD59200DCE9B9 /* Schema.swift */; };
+		2B79FD0A228120A000D9FE4C /* Geotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B79FD09228120A000D9FE4C /* Geotification.swift */; };
+		2B79FD1022812D9700D9FE4C /* Ex2ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B79FD0F22812D9700D9FE4C /* Ex2ViewModel.swift */; };
+		2B7DFEA0228176B500DBB387 /* MapScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7DFE9D228176B500DBB387 /* MapScreenViewModel.swift */; };
+		2B7DFEA1228176B500DBB387 /* MapScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7DFE9E228176B500DBB387 /* MapScreenViewController.swift */; };
+		2B7DFEA2228176B500DBB387 /* MapScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B7DFE9F228176B500DBB387 /* MapScreenViewController.xib */; };
 		3C0A84D334B36AA00946C68B /* Pods_BaiTapNangCaoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 884ECAA8E1D7F00C77AE7994 /* Pods_BaiTapNangCaoUITests.framework */; };
 		49442FC59457641DC9C70609 /* Pods_BaiTapNangCao.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDA34C31E83DE2D7031B8986 /* Pods_BaiTapNangCao.framework */; };
 		8D45A30927BB681C32C7DED2 /* Pods_BaiTapNangCaoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEC741C1CCA2535BC41687F8 /* Pods_BaiTapNangCaoTests.framework */; };
@@ -79,6 +84,12 @@
 		2B14A2DC227BD1E600DCE9B9 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		2B14A2DF227BD1FB00DCE9B9 /* TableCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellViewModel.swift; sourceTree = "<group>"; };
 		2B14A2E2227BD59200DCE9B9 /* Schema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schema.swift; sourceTree = "<group>"; };
+		2B79FD09228120A000D9FE4C /* Geotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geotification.swift; sourceTree = "<group>"; };
+		2B79FD0E22812C2500D9FE4C /* CurrentLocation.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CurrentLocation.gpx; sourceTree = "<group>"; };
+		2B79FD0F22812D9700D9FE4C /* Ex2ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex2ViewModel.swift; sourceTree = "<group>"; };
+		2B7DFE9D228176B500DBB387 /* MapScreenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapScreenViewModel.swift; sourceTree = "<group>"; };
+		2B7DFE9E228176B500DBB387 /* MapScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapScreenViewController.swift; sourceTree = "<group>"; };
+		2B7DFE9F228176B500DBB387 /* MapScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapScreenViewController.xib; sourceTree = "<group>"; };
 		6C06176A8F6BF3A79D9924DF /* Pods-BaiTapNangCaoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaiTapNangCaoUITests.debug.xcconfig"; path = "Target Support Files/Pods-BaiTapNangCaoUITests/Pods-BaiTapNangCaoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		853D562360B33DF8AACACC38 /* Pods-BaiTapNangCaoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaiTapNangCaoTests.debug.xcconfig"; path = "Target Support Files/Pods-BaiTapNangCaoTests/Pods-BaiTapNangCaoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		884ECAA8E1D7F00C77AE7994 /* Pods_BaiTapNangCaoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaiTapNangCaoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,8 +200,12 @@
 		2B14A2C0227BD11400DCE9B9 /* Ex2 */ = {
 			isa = PBXGroup;
 			children = (
+				2B79FD0D22812C0F00D9FE4C /* Resource */,
+				2B79FD082281208D00D9FE4C /* Model */,
+				2B79FD032281194100D9FE4C /* Map */,
 				2B14A2C8227BD16100DCE9B9 /* Ex2ViewController.swift */,
 				2B14A2C9227BD16100DCE9B9 /* Ex2ViewController.xib */,
+				2B79FD0F22812D9700D9FE4C /* Ex2ViewModel.swift */,
 			);
 			path = Ex2;
 			sourceTree = "<group>";
@@ -240,6 +255,32 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		2B79FD032281194100D9FE4C /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				2B7DFE9F228176B500DBB387 /* MapScreenViewController.xib */,
+				2B7DFE9E228176B500DBB387 /* MapScreenViewController.swift */,
+				2B7DFE9D228176B500DBB387 /* MapScreenViewModel.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		2B79FD082281208D00D9FE4C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2B79FD09228120A000D9FE4C /* Geotification.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2B79FD0D22812C0F00D9FE4C /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				2B79FD0E22812C2500D9FE4C /* CurrentLocation.gpx */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		31CB58C79CD86A4BF3249316 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,7 +301,6 @@
 				6C06176A8F6BF3A79D9924DF /* Pods-BaiTapNangCaoUITests.debug.xcconfig */,
 				0627F39C607A778CCA1A42DB /* Pods-BaiTapNangCaoUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -276,6 +316,7 @@
 				2B14A287227BCF9500DCE9B9 /* Frameworks */,
 				2B14A288227BCF9500DCE9B9 /* Resources */,
 				295AB1E6D3FF3A616A01DA37 /* [CP] Copy Pods Resources */,
+				B58B22EE801C0732FD25BB02 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -377,6 +418,7 @@
 				2B14A2D3227BD18200DCE9B9 /* Ex4ViewController.xib in Resources */,
 				2B14A2C7227BD15100DCE9B9 /* Ex1ViewController.xib in Resources */,
 				2B14A2D7227BD19600DCE9B9 /* Ex5ViewController.xib in Resources */,
+				2B7DFEA2228176B500DBB387 /* MapScreenViewController.xib in Resources */,
 				2B14A295227BCF9700DCE9B9 /* Assets.xcassets in Resources */,
 				2B14A2DE227BD1E600DCE9B9 /* TableViewCell.xib in Resources */,
 				2B14A2CF227BD17400DCE9B9 /* Ex3ViewController.xib in Resources */,
@@ -466,6 +508,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B58B22EE801C0732FD25BB02 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BaiTapNangCao/Pods-BaiTapNangCao-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwifterSwift/SwifterSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwifterSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BaiTapNangCao/Pods-BaiTapNangCao-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C7057B2379041DFD5CEAE125 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -500,12 +564,16 @@
 				2B14A2BE227BD0A100DCE9B9 /* AppViewController.swift in Sources */,
 				2B14A2D2227BD18200DCE9B9 /* Ex4ViewController.swift in Sources */,
 				2B14A2DD227BD1E600DCE9B9 /* TableViewCell.swift in Sources */,
+				2B7DFEA1228176B500DBB387 /* MapScreenViewController.swift in Sources */,
 				2B14A28E227BCF9500DCE9B9 /* AppDelegate.swift in Sources */,
 				2B14A2C6227BD15100DCE9B9 /* Ex1ViewController.swift in Sources */,
+				2B79FD1022812D9700D9FE4C /* Ex2ViewModel.swift in Sources */,
 				2B14A2E0227BD1FB00DCE9B9 /* TableCellViewModel.swift in Sources */,
 				2B14A2E3227BD59200DCE9B9 /* Schema.swift in Sources */,
 				2B14A2CE227BD17400DCE9B9 /* Ex3ViewController.swift in Sources */,
+				2B79FD0A228120A000D9FE4C /* Geotification.swift in Sources */,
 				2B14A2D9227BD1A600DCE9B9 /* Ex1ViewModel.swift in Sources */,
+				2B7DFEA0228176B500DBB387 /* MapScreenViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
