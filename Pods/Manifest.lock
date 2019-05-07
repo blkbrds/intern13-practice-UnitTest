@@ -1,4 +1,9 @@
 PODS:
+  - GoogleMaps (3.1.0):
+    - GoogleMaps/Maps (= 3.1.0)
+  - GoogleMaps/Base (3.1.0)
+  - GoogleMaps/Maps (3.1.0):
+    - GoogleMaps/Base
   - Nimble (8.0.1)
   - OHHTTPStubs/Core (7.0.0)
   - OHHTTPStubs/Default (7.0.0):
@@ -16,21 +21,24 @@ PODS:
   - Quick (2.0.0)
 
 DEPENDENCIES:
+  - GoogleMaps
   - Nimble
   - OHHTTPStubs/Swift
   - Quick
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - GoogleMaps
     - Nimble
     - OHHTTPStubs
     - Quick
 
 SPEC CHECKSUMS:
+  GoogleMaps: 5c13302e6fe6bb6e686b267196586b91cd594225
   Nimble: 45f786ae66faa9a709624227fae502db55a8bdd0
   OHHTTPStubs: ef33a2c353110d306bb98f695435ec56ff5a26c3
   Quick: ce1276c7c27ba2da3cb2fd0cde053c3648b3b22d
 
-PODFILE CHECKSUM: 7e2830ed3a88229d1c8b1ee63a4a02cbd1757951
+PODFILE CHECKSUM: ae77b59191ce64a64e90c3bf448e3cd27efa6a14
 
 COCOAPODS: 1.6.1
