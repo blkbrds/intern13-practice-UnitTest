@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		86B0AC05AA3301B72A43CC44 /* Pods_Bai2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E9E5B4FC09B0758A83B148 /* Pods_Bai2.framework */; };
+		FF04CE5A22813255006D768B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF04CE5922813255006D768B /* AppDelegate.swift */; };
+		FF04CE6122813258006D768B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF04CE6022813258006D768B /* Assets.xcassets */; };
+		FF04CE6422813258006D768B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF04CE6222813258006D768B /* LaunchScreen.storyboard */; };
+		FF04CE6E228132A0006D768B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF04CE6C228132A0006D768B /* MapViewController.swift */; };
+		FF04CE6F228132A0006D768B /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF04CE6D228132A0006D768B /* MapViewController.xib */; };
+		FF04CE72228164C3006D768B /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF04CE71228164C3006D768B /* MapViewModel.swift */; };
+		FF04CE7522816E46006D768B /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF04CE7422816E46006D768B /* Location.swift */; };
+		FF04CE7822817F01006D768B /* danger.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FF04CE7722817F01006D768B /* danger.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		63E9E5B4FC09B0758A83B148 /* Pods_Bai2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bai2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B742D26592C3DC8A28649AFE /* Pods-Bai2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bai2.release.xcconfig"; path = "Target Support Files/Pods-Bai2/Pods-Bai2.release.xcconfig"; sourceTree = "<group>"; };
+		F2576CB74693C912D8E08601 /* Pods-Bai2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bai2.debug.xcconfig"; path = "Target Support Files/Pods-Bai2/Pods-Bai2.debug.xcconfig"; sourceTree = "<group>"; };
+		FF04CE5622813255006D768B /* Bai2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bai2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF04CE5922813255006D768B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF04CE6022813258006D768B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF04CE6322813258006D768B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF04CE6522813258006D768B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF04CE6C228132A0006D768B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		FF04CE6D228132A0006D768B /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		FF04CE70228139B6006D768B /* DefaultLocation.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DefaultLocation.gpx; sourceTree = "<group>"; };
+		FF04CE71228164C3006D768B /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		FF04CE7422816E46006D768B /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		FF04CE76228170D0006D768B /* DefaultLocation2.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DefaultLocation2.gpx; sourceTree = "<group>"; };
+		FF04CE7722817F01006D768B /* danger.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = danger.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF04CE5322813255006D768B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86B0AC05AA3301B72A43CC44 /* Pods_Bai2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BEC41C27BDC52E3F08FF2A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2576CB74693C912D8E08601 /* Pods-Bai2.debug.xcconfig */,
+				B742D26592C3DC8A28649AFE /* Pods-Bai2.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FCCF2FE2BDA63E4E68439B01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63E9E5B4FC09B0758A83B148 /* Pods_Bai2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF04CE4D22813255006D768B = {
+			isa = PBXGroup;
+			children = (
+				FF04CE7722817F01006D768B /* danger.mp3 */,
+				FF04CE5822813255006D768B /* Bai2 */,
+				FF04CE5722813255006D768B /* Products */,
+				0BEC41C27BDC52E3F08FF2A3 /* Pods */,
+				FCCF2FE2BDA63E4E68439B01 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF04CE5722813255006D768B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF04CE5622813255006D768B /* Bai2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF04CE5822813255006D768B /* Bai2 */ = {
+			isa = PBXGroup;
+			children = (
+				FF04CE7322816E37006D768B /* Schema */,
+				FF04CE6B2281328E006D768B /* Map */,
+				FF04CE5922813255006D768B /* AppDelegate.swift */,
+				FF04CE6022813258006D768B /* Assets.xcassets */,
+				FF04CE6222813258006D768B /* LaunchScreen.storyboard */,
+				FF04CE6522813258006D768B /* Info.plist */,
+				FF04CE70228139B6006D768B /* DefaultLocation.gpx */,
+				FF04CE76228170D0006D768B /* DefaultLocation2.gpx */,
+			);
+			path = Bai2;
+			sourceTree = "<group>";
+		};
+		FF04CE6B2281328E006D768B /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				FF04CE6C228132A0006D768B /* MapViewController.swift */,
+				FF04CE6D228132A0006D768B /* MapViewController.xib */,
+				FF04CE71228164C3006D768B /* MapViewModel.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		FF04CE7322816E37006D768B /* Schema */ = {
+			isa = PBXGroup;
+			children = (
+				FF04CE7422816E46006D768B /* Location.swift */,
+			);
+			path = Schema;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF04CE5522813255006D768B /* Bai2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF04CE6822813258006D768B /* Build configuration list for PBXNativeTarget "Bai2" */;
+			buildPhases = (
+				3B28E6D9EEFB9F15DCD1E14D /* [CP] Check Pods Manifest.lock */,
+				FF04CE5222813255006D768B /* Sources */,
+				FF04CE5322813255006D768B /* Frameworks */,
+				FF04CE5422813255006D768B /* Resources */,
+				90B94474132DAE8B24B72F7D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bai2;
+			productName = Bai2;
+			productReference = FF04CE5622813255006D768B /* Bai2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF04CE4E22813255006D768B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = MBA0023;
+				TargetAttributes = {
+					FF04CE5522813255006D768B = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = FF04CE5122813255006D768B /* Build configuration list for PBXProject "Bai2" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF04CE4D22813255006D768B;
+			productRefGroup = FF04CE5722813255006D768B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF04CE5522813255006D768B /* Bai2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF04CE5422813255006D768B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF04CE7822817F01006D768B /* danger.mp3 in Resources */,
+				FF04CE6422813258006D768B /* LaunchScreen.storyboard in Resources */,
+				FF04CE6F228132A0006D768B /* MapViewController.xib in Resources */,
+				FF04CE6122813258006D768B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B28E6D9EEFB9F15DCD1E14D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bai2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90B94474132DAE8B24B72F7D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bai2/Pods-Bai2-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bai2/Pods-Bai2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF04CE5222813255006D768B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF04CE5A22813255006D768B /* AppDelegate.swift in Sources */,
+				FF04CE6E228132A0006D768B /* MapViewController.swift in Sources */,
+				FF04CE7522816E46006D768B /* Location.swift in Sources */,
+				FF04CE72228164C3006D768B /* MapViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FF04CE6222813258006D768B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF04CE6322813258006D768B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF04CE6622813258006D768B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF04CE6722813258006D768B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF04CE6922813258006D768B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2576CB74693C912D8E08601 /* Pods-Bai2.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Bai2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MBA0023.Bai2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF04CE6A22813258006D768B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B742D26592C3DC8A28649AFE /* Pods-Bai2.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Bai2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MBA0023.Bai2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF04CE5122813255006D768B /* Build configuration list for PBXProject "Bai2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF04CE6622813258006D768B /* Debug */,
+				FF04CE6722813258006D768B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF04CE6822813258006D768B /* Build configuration list for PBXNativeTarget "Bai2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF04CE6922813258006D768B /* Debug */,
+				FF04CE6A22813258006D768B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF04CE4E22813255006D768B /* Project object */;
+}
