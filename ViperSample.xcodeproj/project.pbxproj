@@ -19,6 +19,14 @@
 		30DAF70522701A550062DA0F /* MockHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DAF70122701A550062DA0F /* MockHomeViewController.swift */; };
 		30DAF70622701A550062DA0F /* MockDefaultListFruitInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DAF70222701A550062DA0F /* MockDefaultListFruitInteractor.swift */; };
 		30DAF70722701A550062DA0F /* HomePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DAF70322701A550062DA0F /* HomePresenterTests.swift */; };
+		30F05C432280174B00F6DF95 /* AddRemindLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F05C412280174B00F6DF95 /* AddRemindLocationViewController.swift */; };
+		30F05C442280174B00F6DF95 /* AddRemindLocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30F05C422280174B00F6DF95 /* AddRemindLocationViewController.xib */; };
+		30F05C47228017C700F6DF95 /* HomeRemindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F05C45228017C700F6DF95 /* HomeRemindViewController.swift */; };
+		30F05C48228017C700F6DF95 /* HomeRemindViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30F05C46228017C700F6DF95 /* HomeRemindViewController.xib */; };
+		30F05C4F22801B8E00F6DF95 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F05C4E22801B8E00F6DF95 /* UIViewControllerExt.swift */; };
+		30F05C56228035D600F6DF95 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F05C55228035D600F6DF95 /* String.swift */; };
+		30F05C5C22803EA900F6DF95 /* HomeRemindViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F05C5B22803EA900F6DF95 /* HomeRemindViewModel.swift */; };
+		30F2F9382281497C008F89C6 /* GeoLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F2F9372281497C008F89C6 /* GeoLocation.swift */; };
 		74E22BA7225453FB00D7FEBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E22BA6225453FB00D7FEBB /* AppDelegate.swift */; };
 		74E22BAE225453FC00D7FEBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74E22BAD225453FC00D7FEBB /* Assets.xcassets */; };
 		74E22BB1225453FC00D7FEBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74E22BAF225453FC00D7FEBB /* LaunchScreen.storyboard */; };
@@ -74,6 +82,14 @@
 		30DAF70122701A550062DA0F /* MockHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockHomeViewController.swift; sourceTree = "<group>"; };
 		30DAF70222701A550062DA0F /* MockDefaultListFruitInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockDefaultListFruitInteractor.swift; sourceTree = "<group>"; };
 		30DAF70322701A550062DA0F /* HomePresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenterTests.swift; sourceTree = "<group>"; };
+		30F05C412280174B00F6DF95 /* AddRemindLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRemindLocationViewController.swift; sourceTree = "<group>"; };
+		30F05C422280174B00F6DF95 /* AddRemindLocationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddRemindLocationViewController.xib; sourceTree = "<group>"; };
+		30F05C45228017C700F6DF95 /* HomeRemindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRemindViewController.swift; sourceTree = "<group>"; };
+		30F05C46228017C700F6DF95 /* HomeRemindViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeRemindViewController.xib; sourceTree = "<group>"; };
+		30F05C4E22801B8E00F6DF95 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
+		30F05C55228035D600F6DF95 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		30F05C5B22803EA900F6DF95 /* HomeRemindViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRemindViewModel.swift; sourceTree = "<group>"; };
+		30F2F9372281497C008F89C6 /* GeoLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoLocation.swift; sourceTree = "<group>"; };
 		30F7FEBF2268230200374DC4 /* ViperSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30F7FEC32268230200374DC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74E22BA3225453FB00D7FEBB /* ViperSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,8 +162,8 @@
 				30760C12227018C300946405 /* UserServicesTests.swift */,
 			);
 			path = Services;
-            sourceTree = "<group>";
-            };
+			sourceTree = "<group>";
+		};
 		30A27A77226960E100C058BA /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +211,69 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		30F05C36227FEDA900F6DF95 /* RemindLocation */ = {
+			isa = PBXGroup;
+			children = (
+				30F05C54228035C600F6DF95 /* Define */,
+				30F05C4D22801B6F00F6DF95 /* Ext */,
+				30F05C4A22801A4700F6DF95 /* View */,
+				30F05C4922801A3C00F6DF95 /* Model */,
+			);
+			path = RemindLocation;
+			sourceTree = "<group>";
+		};
+		30F05C3F2280173000F6DF95 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				30F05C45228017C700F6DF95 /* HomeRemindViewController.swift */,
+				30F05C5B22803EA900F6DF95 /* HomeRemindViewModel.swift */,
+				30F05C46228017C700F6DF95 /* HomeRemindViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		30F05C402280173300F6DF95 /* AddRemindLocation */ = {
+			isa = PBXGroup;
+			children = (
+				30F05C412280174B00F6DF95 /* AddRemindLocationViewController.swift */,
+				30F05C422280174B00F6DF95 /* AddRemindLocationViewController.xib */,
+			);
+			path = AddRemindLocation;
+			sourceTree = "<group>";
+		};
+		30F05C4922801A3C00F6DF95 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				30F2F9372281497C008F89C6 /* GeoLocation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		30F05C4A22801A4700F6DF95 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				30F05C3F2280173000F6DF95 /* Home */,
+				30F05C402280173300F6DF95 /* AddRemindLocation */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		30F05C4D22801B6F00F6DF95 /* Ext */ = {
+			isa = PBXGroup;
+			children = (
+				30F05C4E22801B8E00F6DF95 /* UIViewControllerExt.swift */,
+			);
+			path = Ext;
+			sourceTree = "<group>";
+		};
+		30F05C54228035C600F6DF95 /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				30F05C55228035D600F6DF95 /* String.swift */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
 		30F7FEC02268230200374DC4 /* ViperSampleTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +297,7 @@
 		74E22B9A225453FA00D7FEBB = {
 			isa = PBXGroup;
 			children = (
+				30F05C36227FEDA900F6DF95 /* RemindLocation */,
 				F463F1447D126632A4C575B1 /* Frameworks */,
 				23E7074C5FA4D0352E8C0498 /* Pods */,
 				74E22BA4225453FB00D7FEBB /* Products */,
@@ -476,6 +556,7 @@
 				74E22BA0225453FB00D7FEBB /* Frameworks */,
 				74E22BA1225453FB00D7FEBB /* Resources */,
 				368F8D0705D75CF054FC2A52 /* [CP] Embed Pods Frameworks */,
+				2C2F525BE183A131598BAA5E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -542,12 +623,36 @@
 				74E22BAE225453FC00D7FEBB /* Assets.xcassets in Resources */,
 				74E22BF22254561E00D7FEBB /* HomeCell.xib in Resources */,
 				74E22BEF2254561E00D7FEBB /* HomeViewController.xib in Resources */,
+				30F05C48228017C700F6DF95 /* HomeRemindViewController.xib in Resources */,
+				30F05C442280174B00F6DF95 /* AddRemindLocationViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2C2F525BE183A131598BAA5E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ViperSample/Pods-ViperSample-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ViperSample/Pods-ViperSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		368F8D0705D75CF054FC2A52 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -626,12 +731,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				30A27A872269AB0400C058BA /* MockHomePresenter.swift in Sources */,
-				30F7FECF2268581300374DC4 /* MockHomeViewController.swift in Sources */,
-				30F7FECD22682F7000374DC4 /* HomePresenterTests.swift in Sources */,
-				30F7FED32268658800374DC4 /* MockDefaultListFruitInteractor.swift in Sources */,
 				30760C13227018C300946405 /* FruitServicesTests.swift in Sources */,
 				30760C14227018C300946405 /* UserServicesTests.swift in Sources */,
-				30F7FED12268656B00374DC4 /* MockDefaultHomeRouter.swift in Sources */,
 				30A27A7B2269616F00C058BA /* MockDefaultLoginRouter.swift in Sources */,
 				30A27A7D226961E000C058BA /* MockDefaultLoginInteractor.swift in Sources */,
 				30DAF70522701A550062DA0F /* MockHomeViewController.swift in Sources */,
@@ -650,8 +751,10 @@
 			files = (
 				74E22BF42254561E00D7FEBB /* LoginViewController.swift in Sources */,
 				74E22BDA225455E900D7FEBB /* Fruit.swift in Sources */,
+				30F05C4F22801B8E00F6DF95 /* UIViewControllerExt.swift in Sources */,
 				74E22BCD2254557200D7FEBB /* Completion.swift in Sources */,
 				74E22BE42254560C00D7FEBB /* LoginPresenter.swift in Sources */,
+				30F05C47228017C700F6DF95 /* HomeRemindViewController.swift in Sources */,
 				74E22BE52254560C00D7FEBB /* HomePresenter.swift in Sources */,
 				74E22BCC2254557200D7FEBB /* Errors.swift in Sources */,
 				74E22BD7225455D600D7FEBB /* FruitEntity.swift in Sources */,
@@ -659,13 +762,17 @@
 				74E22BF82254564400D7FEBB /* FruitServices.swift in Sources */,
 				74E22BDE225455F900D7FEBB /* ListFruitInteractor.swift in Sources */,
 				74E22BD22254559200D7FEBB /* LoginRouter.swift in Sources */,
+				30F05C56228035D600F6DF95 /* String.swift in Sources */,
 				74E22BC92254554700D7FEBB /* UITextFieldExt.swift in Sources */,
 				74E22BC82254554700D7FEBB /* StringExt.swift in Sources */,
 				74E22BF02254561E00D7FEBB /* HomeViewController.swift in Sources */,
 				74E22BA7225453FB00D7FEBB /* AppDelegate.swift in Sources */,
+				30F05C432280174B00F6DF95 /* AddRemindLocationViewController.swift in Sources */,
 				74E22BF12254561E00D7FEBB /* HomeCell.swift in Sources */,
 				74E22BDF225455F900D7FEBB /* LoginInteractor.swift in Sources */,
+				30F05C5C22803EA900F6DF95 /* HomeRemindViewModel.swift in Sources */,
 				74E22BD6225455D600D7FEBB /* UserEntity.swift in Sources */,
+				30F2F9382281497C008F89C6 /* GeoLocation.swift in Sources */,
 				74E22BDB225455E900D7FEBB /* User.swift in Sources */,
 				74E22BF72254564400D7FEBB /* UserServices.swift in Sources */,
 			);
@@ -862,7 +969,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9S723V86A4;
 				INFOPLIST_FILE = "$(SRCROOT)/ViperSample/Supports/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -882,7 +989,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9S723V86A4;
 				INFOPLIST_FILE = "$(SRCROOT)/ViperSample/Supports/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

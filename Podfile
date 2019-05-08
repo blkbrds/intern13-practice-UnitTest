@@ -10,6 +10,7 @@ target 'ViperSample' do
   pod 'Nimble'
   pod 'Quick'
   pod 'OHHTTPStubs/Swift'
+  pod 'GoogleMaps'
   
   target 'ViperSampleTests' do
     inherit! :search_paths
