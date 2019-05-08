@@ -13,12 +13,12 @@ final class Geotification {
 
     var coordinate = CLLocationCoordinate2D()
     var radius: CLLocationDistance = 0
-    var id = ""
+    var zone = ""
 
-    init(coordinate: CLLocationCoordinate2D, radius: CLLocationDistance, id: String) {
+    init(coordinate: CLLocationCoordinate2D, radius: CLLocationDistance, zone: String) {
         self.coordinate = coordinate
         self.radius = radius
-        self.id = id
+        self.zone = zone
     }
 
     init() { }

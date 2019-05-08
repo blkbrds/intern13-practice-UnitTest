@@ -17,8 +17,12 @@ final class Ex2ViewModel {
         return MapScreenViewModel(geotifications: geotifications)
     }
 
-    func addGeotification(coordinate: CLLocationCoordinate2D, radius: Double, id: String) {
-        let geotification = Geotification(coordinate: coordinate, radius: CLLocationDistance(floatLiteral: radius), id: id)
+    func addGeotification(coordinate: CLLocationCoordinate2D, radius: Double, zone: String) {
+        let geotification = Geotification(coordinate: coordinate, radius: CLLocationDistance(floatLiteral: radius), zone: zone)
         geotifications.append(geotification)
+    }
+
+    func removeGeotification(coordinate: CLLocationCoordinate2D) {
+        geotifications.removeFirst(where: { $0.coordinate.latitude == coordinate.latitude && $0.coordinate.longitude == coordinate.longitude })
     }
 }

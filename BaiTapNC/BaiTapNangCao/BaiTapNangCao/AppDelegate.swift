@@ -58,16 +58,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
-    private func handleEvent() {
+    private func handleEvent(region: CLRegion) {
         if UIApplication.shared.applicationState == .active {
             let action = UIAlertAction(title: "OK", style: .destructive, handler: nil)
-            let alert = UIAlertController(title: "ALERT", message: "SAFE ZONE Entered", preferredStyle: .alert)
+            let alert = UIAlertController(title: "ALERT", message: "You had entered " + region.identifier, preferredStyle: .alert)
             alert.addAction(action)
             window?.rootViewController?.present(alert, animated: true)
         } else {
             let notifyContent = UNMutableNotificationContent()
             notifyContent.sound = UNNotificationSound.default
-            notifyContent.body = "SAFE ZONE Entered"
+            notifyContent.body = "You had entered" + region.identifier
             notifyContent.badge = UIApplication.shared.applicationIconBadgeNumber + 1 as NSNumber
             let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
             let request = UNNotificationRequest(identifier: "location_changed", content: notifyContent, trigger: trigger)
@@ -83,7 +83,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 extension AppDelegate: CLLocationManagerDelegate {
 
     func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
-        handleEvent()
+        handleEvent(region: region)
     }
 }
 

@@ -37,6 +37,7 @@ final class MapScreenViewController: UIViewController {
         for geo in viewModel.geotifications {
             startMonitoring(geotification: geo)
             let marker = GMSMarker(position: geo.coordinate)
+            marker.title = geo.zone
             marker.map = mapView
             let circle = GMSCircle(position: geo.coordinate, radius: geo.radius)
             circle.fillColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 0.451446963)
@@ -45,6 +46,7 @@ final class MapScreenViewController: UIViewController {
             circle.map = mapView
         }
         mapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 15, bearing: 0, viewingAngle: 0)
+        locationManager.startUpdatingLocation()
     }
 
     private func showAlert(error: String, msg: String) {
@@ -66,7 +68,7 @@ final class MapScreenViewController: UIViewController {
 
     private func stopMonitoring(geotification: Geotification) {
         for region in locationManager.monitoredRegions {
-            guard let circularRegion = region as? CLCircularRegion, circularRegion.identifier == geotification.id else { continue }
+            guard let circularRegion = region as? CLCircularRegion, circularRegion.identifier == geotification.zone else { continue }
             locationManager.stopMonitoring(for: circularRegion)
         }
     }

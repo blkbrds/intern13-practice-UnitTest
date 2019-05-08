@@ -18,7 +18,7 @@ final class MapScreenViewModel {
     }
 
     func region(geotification: Geotification) -> CLCircularRegion {
-        let region = CLCircularRegion(center: geotification.coordinate, radius: geotification.radius, identifier: geotification.id)
+        let region = CLCircularRegion(center: geotification.coordinate, radius: geotification.radius, identifier: geotification.zone)
         region.notifyOnEntry = true
         return region
     }
