@@ -42,13 +42,13 @@ final class RemindLocationViewController: UIViewController {
         marker.map = mapView
         
         // Handle circle
-        let circle = GMSCircle(position: coordinate, radius: 1000)
+        let circle = GMSCircle(position: coordinate, radius: Identifier.radius)
         circle.fillColor = UIColor.red.withAlphaComponent(0.2)
         circle.strokeColor = .red
         circle.strokeWidth = 2.0
         circle.map = mapView
         
-        let location = Location(coordinate: coordinate, radius: 1000)
+        let location = Location(coordinate: coordinate, radius: Identifier.radius)
         locations.append(location)
     }
     
@@ -57,7 +57,7 @@ final class RemindLocationViewController: UIViewController {
         let userLocation = CLLocation(latitude: myLocation.latitude, longitude: myLocation.longitude)
         let warninglocation = CLLocation(latitude: coordinate.latitude, longitude: coordinate.longitude)
         let distance = userLocation.distance(from: warninglocation)
-        if distance <= 1000 {
+        if distance <= Identifier.radius {
             AppDelegate.shared.scheduleLocalNotification()
         }
     }
@@ -90,5 +90,12 @@ extension RemindLocationViewController: GMSMapViewDelegate {
     func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
         handleLocationWhenSelected(at: coordinate)
         handleShowNotify(at: coordinate)
+    }
+}
+
+extension RemindLocationViewController {
+    
+    struct Identifier {
+        static let radius: Double = 1000
     }
 }
